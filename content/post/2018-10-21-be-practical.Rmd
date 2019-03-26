@@ -1,0 +1,113 @@
+---
+title: "Be Practical!"
+author: "JB"
+date: '2018-10-21'
+output: pdf_document
+categories:
+- Data
+- Analysis
+slug: be-practical
+tags: []
+MathJax: //cdn.bootcss.com
+---
+
+```{r, echo=FALSE} 
+country<- c(" Canada "," Canada "," Canada "," United States"," United States"," United States"," United Kingdom"," United Kingdom"," United Kingdom"," France"," France"," France"," Germany"," Germany"," Germany")
+year<- c(2001,2002,2003,2001,2002,2003,2001,2002,2003,2001,2002,2003,2001,2002,2003)
+Population<-c(31021000,31373000,31676000,284970000,287630000,290110000,59113016,59365677,59636662,59549549,59893849,60270320,82350000,82490000,82530000)
+
+options(scipen = 50, digits = 20) 
+df <- data.frame(country,year,Population)
+dat<-c(1999,2000,2001,2002,2003,2004)
+```
+
+I thought I would change gears into something more practical this week, delivering a basic analytic product end to end.  I will preface this with I hate doing analysis in Excel, but the world’s most prolific software isn’t going anytime soon. To be fair, most people are comfortable with it so that is what we will discuss in this post. 
+
+What I always recommend to people is they treat their analysis as thee distinct parts. That doesn’t mean you cannot go back iterate, but like washing your hands when cooking you are trying to prevent cross contamination and maintain order. The three-part rule allows you to understand the clear purpose of your work so you know what success looks like. The three parts include **Data Transformation**, **Analysis** and **Visualization**. Before you get going with anything start at the visualization and ask yourself “What will the customer see?”, “What have they asked for?” and “What is the best way to present this information?” That will dictate what analysis and data you need.  Do you want a time series? Then you need dates. Do you want a count of categories? Then you need frequencies. The important thing is what the ‘end’ looks like for the customer.
+
+**Data Transformation**
+
+In this step you would take you data and rearrange it to suit your analysis. There are two types of tabulate data, wide and long format. In additional all data in a table can be thought of as a matrix (refered to as $a$) where $i$ (the rows) and $j$ (the columns) so make a table, or matrix, or $a_i,_j$.
+
+The table below is an example of wide format data. It is wide because one row index has repeated observations by columns. In this case, country as an index has three observations of population between 2001 and 2003. Wide format is great for isolating a subject, such as country, and looking at how things may change over time. Also known as repeated measures analysis.
+
+|  Country| Population 2001| Population 2002| Population 2003|
+| :------------ |:------------- |:------------- |:------------- |
+| Canada | 31,021,000|31,373,000|31,676,000|
+| United States| 284,970,000|287,630,000|290,110,000|
+| United Kingdom |59,113,016|59,365,677|59,636,662|
+| France |59,549,549|59,893,849|60,270,320|
+| Germany|82,350,000|82,490,000|82,530,000|
+
+Long format is slightly different. Note that we have now split the column titles of population and year into separate columns. For most analysis, we can now isolate that attribute and use filters to specify population or year for a particular country. This is most commonly used for summarizing data.
+
+
+|  Country| Population| Year|
+| :------------ |:------------- |:------------- |
+| Canada |2001|31,021,000|
+| Canada |2002|31,373,000|
+| Canada |2003|31,676,000|
+| United States|2001|284,970,000|
+| United States|2002|287,630,000|
+| United States|2003|290,110,000|
+| United Kingdom|2001|59,113,016|
+| United Kingdom|2002|59,365,677|
+| United Kingdom|2003|59,636,662|
+| France|2001|59,549,549|
+| France|2002|59,893,849|
+| France|2003|60,270,320|
+| Germany|2001|82,350,000|
+| Germany|2002|82,490,000|
+| Germany|2003|82,530,000|
+
+Since we are also dealing in the real world, you may have incomplete or incorrect data such as , '0' population or the year '2099'. When the happens it is worth correcting the data if possible but most likely you can simply mark it as missing. For numeric data use a character that you likely would not need like ‘-99’ and for categorical data make the data as “NA”.
+
+**Analysis**
+
+Now that your data is looking spiffy, you need to analyse it. The big question here is are you summarizing it (ie. Showing what has happened in the past) or are you forecasting to predict the future. One is easier than the other. Using past data we don’t have to worry about model fit and strength as we know what happened. Prediction and forecasting require some higher levels of knowledge. So let’s keep it simple today and just go with summary. Basic graphs types for analysis include:
+
+Histogram- Shows the distribution of numeric data by a given values in a variable as a frequency. It is important to remember that histograms only take one variable at a time and usually measures the number of items with a given values. This graph can be extended to include normal distribution to see how your data makes an objective theoretical dataset.
+
+```{r, echo=FALSE} 
+hist(df$year,dat,xlab="Years",main="Histogram of Years in Data")
+```
+
+Bar Charts- Used to compare the frequency of variables together. You can have two types of bar chart; stacked (where all the values are presented as segments of the same bar) or grouped (similar to a histogram where a bar is split by values within a variable or some other grouping variable). 
+
+```{r, echo=FALSE} 
+x<-df[df$year == 2001, ]
+barplot(x$Population,las=3,names.arg=c("Canada","United States","United Kingdom","France","Gerrmany"), main="Barplot of Population 2001")
+```
+
+Line Chart- Draws a continuous line between points on a X and Y axis where X is a continuous scale variable and Y is the measurement such as population over time. Can be fitted with a line of best fit to project the general direction of data for forecasting. 
+
+```{r, echo=FALSE} 
+y<-df[df$country == " Canada ", ]
+plot(y$year, y$Population, type="l", main="Canadian Population Line Graph",xaxt='n',xlab="Year",ylab="Population")
+lines(y$year, y$Population)
+axis(1, at=2001:2003, labels=c(2001,2002,2003),las=2)
+```
+
+Scatterplot- Pointing independent points on a plane of X and Y where X is a continuous scale variable and Y is the measurement as a pair (ie. 2001,31021000). Here the points are not joined but some relationship between the X and Y point. Can also be fitted with a line of best fit to project the general direction of data for forecasting.
+
+```{r, echo=FALSE} 
+plot(df$year, df$Population, type="p", main="Country Population Scatter Plot",xaxt='n',xlab="Year",ylab="Population",col=df$country)
+axis(1, at=2001:2003, labels=c(2001,2002,2003),las=2)
+```
+
+Pie Chart-There are also pie charts. But as a note of caution, they only really show how percentages interact and can be misleading if you have a category that dominates the chart forcing all the other categories into a small section of the graph that is unreadable.
+
+```{r, echo=FALSE} 
+pie(x$Population, labels = c("Canada","United States","United Kingdom","France","Gerrmany"), main="Countries Population 2001")
+```
+**Visualization**
+
+After the whistle-stop tour of analysis we move on to visualization. The above graphs bleed into this topic, but there is still important work to be done. Do you have multiple graphs? Then arrange them from the broad to the specific like you are telling a story. If you use the same variable over again use the same colour so the customers eye can quickly recognize it. Avoid a lot of text in graphs unless necessary. Use simple names for all labels or axis.  If you have many categories avoid using rainbow colours as the graph will look busy or try to reduce or separate the columns to make it more manageable. 
+
+The beauty of the three-part rule means if a customer says “I would also like” or “can we also show” you can quickly interpret their needs and go back to the part of the analysis to be changed. If your analysis and graphs are configured correctly, they should cascade any changes automatically meaning you can quickly iterate on changes under you have a nice shiny output. 
+
+**Wrapping Up**
+
+It is always important to specify your three-parts during or after your analysis by writing down what you did and how you did it. Don’t add it to your presentation as it will distract from the story you are telling. If the customer wants it it will be there for them, but typically they just want the graph. Having it written down in the three distinct parts allows for a clean organizational flow to you method that makes intuitive sense. A biproduct of writting your method down is that it teaches and reinforces the principles of good analysis to customers who are not data savvy. Not only will they get a top-notch product, but will also learn a little about what goes on behind the scenes. 
+
+I hope this is helpful.What have your experiences been doing analysis? I want to hear from folks about your trials, tribulations and triumphs delivering analysis to customers. And if you can apply my method in your next project, please give a shout out to let me know how you got on.

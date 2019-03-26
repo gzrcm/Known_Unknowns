@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Process on Known Unknowns</title>
+    <link>/categories/process/</link>
+    <description>Recent content in Process on Known Unknowns</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/process/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>&#34;When you do things right, people won&#39;t be sure you&#39;ve done anything at all.&#34;</title>
+      <link>/2018/08/02/when-you-do-things-right-people-won-t-be-sure-you-ve-done-anything-at-all/</link>
+      <pubDate>Thu, 02 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/08/02/when-you-do-things-right-people-won-t-be-sure-you-ve-done-anything-at-all/</guid>
+      <description>One of the best visualizations of intelligence management I was exposed to during my MSc at Mercyhurst University was the concept of intelligence as three distinct powers; process, product and culture. When arranged in a diagram as above form the foundation for proper intelligence (yes, it looks like a tri-force from Legend of Zelda and that is an apt description).
+Instead of focusing on the product, the intelligence tri-force image equally balances the process of making decisions, the product design itself and finally, how we as analysts influence organisational culture for the better.</description>
+    </item>
+    
+  </channel>
+</rss>

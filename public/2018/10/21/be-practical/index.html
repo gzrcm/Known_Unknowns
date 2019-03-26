@@ -1,0 +1,303 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Known Unknowns</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A website built through Hugo and blogdown." />
+  <meta name="author" content="JB" />
+  <meta name="generator" content="Hugo 0.49" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<link rel="stylesheet" href="/css/dracula.css" rel="stylesheet" id="theme-stylesheet">
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Known Unknowns</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+      <p><em>As our circle of knowledge expands, so does the circumference of darkness surrounding it.<br/>-Albert Einstein</em></p>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="mailto:jacob.kaelan@gmail.com">
+                <i class="fa-li fa  fa-lg"></i><span>Email</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="https://github.com/gzrcm">
+                <i class="fa-li fa  fa-lg"></i><span>GitHub</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="https://uk.linkedin.com/in/jacobbaisley">
+                <i class="fa-li fa  fa-lg"></i><span>Linkedin</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/projects/">
+                <i class="fa-li fa  fa-lg"></i><span>Projects</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+  
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Be Practical!</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2018-10-21T00:00:00Z">Oct 21, 2018</time>
+        </li>
+        
+        
+        <li>
+            Categories: 
+            <em>
+                
+                    
+                    <a href="/categories/data/">Data</a>
+                
+                    , 
+                    <a href="/categories/analysis/">Analysis</a>
+                
+            </em>
+        </li>
+        
+
+        
+
+        <li>6 min read</li>
+    </ul>
+</aside>
+    
+
+    <p>I thought I would change gears into something more practical this week, delivering a basic analytic product end to end. I will preface this with I hate doing analysis in Excel, but the world’s most prolific software isn’t going anytime soon. To be fair, most people are comfortable with it so that is what we will discuss in this post.</p>
+<p>What I always recommend to people is they treat their analysis as thee distinct parts. That doesn’t mean you cannot go back iterate, but like washing your hands when cooking you are trying to prevent cross contamination and maintain order. The three-part rule allows you to understand the clear purpose of your work so you know what success looks like. The three parts include <strong>Data Transformation</strong>, <strong>Analysis</strong> and <strong>Visualization</strong>. Before you get going with anything start at the visualization and ask yourself “What will the customer see?”, “What have they asked for?” and “What is the best way to present this information?” That will dictate what analysis and data you need. Do you want a time series? Then you need dates. Do you want a count of categories? Then you need frequencies. The important thing is what the ‘end’ looks like for the customer.</p>
+<p><strong>Data Transformation</strong></p>
+<p>In this step you would take you data and rearrange it to suit your analysis. There are two types of tabulate data, wide and long format. In additional all data in a table can be thought of as a matrix (refered to as <span class="math inline">\(a\)</span>) where <span class="math inline">\(i\)</span> (the rows) and <span class="math inline">\(j\)</span> (the columns) so make a table, or matrix, or <span class="math inline">\(a_i,_j\)</span>.</p>
+<p>The table below is an example of wide format data. It is wide because one row index has repeated observations by columns. In this case, country as an index has three observations of population between 2001 and 2003. Wide format is great for isolating a subject, such as country, and looking at how things may change over time. Also known as repeated measures analysis.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Country</th>
+<th align="left">Population 2001</th>
+<th align="left">Population 2002</th>
+<th align="left">Population 2003</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Canada</td>
+<td align="left">31,021,000</td>
+<td align="left">31,373,000</td>
+<td align="left">31,676,000</td>
+</tr>
+<tr class="even">
+<td align="left">United States</td>
+<td align="left">284,970,000</td>
+<td align="left">287,630,000</td>
+<td align="left">290,110,000</td>
+</tr>
+<tr class="odd">
+<td align="left">United Kingdom</td>
+<td align="left">59,113,016</td>
+<td align="left">59,365,677</td>
+<td align="left">59,636,662</td>
+</tr>
+<tr class="even">
+<td align="left">France</td>
+<td align="left">59,549,549</td>
+<td align="left">59,893,849</td>
+<td align="left">60,270,320</td>
+</tr>
+<tr class="odd">
+<td align="left">Germany</td>
+<td align="left">82,350,000</td>
+<td align="left">82,490,000</td>
+<td align="left">82,530,000</td>
+</tr>
+</tbody>
+</table>
+<p>Long format is slightly different. Note that we have now split the column titles of population and year into separate columns. For most analysis, we can now isolate that attribute and use filters to specify population or year for a particular country. This is most commonly used for summarizing data.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Country</th>
+<th align="left">Population</th>
+<th align="left">Year</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Canada</td>
+<td align="left">2001</td>
+<td align="left">31,021,000</td>
+</tr>
+<tr class="even">
+<td align="left">Canada</td>
+<td align="left">2002</td>
+<td align="left">31,373,000</td>
+</tr>
+<tr class="odd">
+<td align="left">Canada</td>
+<td align="left">2003</td>
+<td align="left">31,676,000</td>
+</tr>
+<tr class="even">
+<td align="left">United States</td>
+<td align="left">2001</td>
+<td align="left">284,970,000</td>
+</tr>
+<tr class="odd">
+<td align="left">United States</td>
+<td align="left">2002</td>
+<td align="left">287,630,000</td>
+</tr>
+<tr class="even">
+<td align="left">United States</td>
+<td align="left">2003</td>
+<td align="left">290,110,000</td>
+</tr>
+<tr class="odd">
+<td align="left">United Kingdom</td>
+<td align="left">2001</td>
+<td align="left">59,113,016</td>
+</tr>
+<tr class="even">
+<td align="left">United Kingdom</td>
+<td align="left">2002</td>
+<td align="left">59,365,677</td>
+</tr>
+<tr class="odd">
+<td align="left">United Kingdom</td>
+<td align="left">2003</td>
+<td align="left">59,636,662</td>
+</tr>
+<tr class="even">
+<td align="left">France</td>
+<td align="left">2001</td>
+<td align="left">59,549,549</td>
+</tr>
+<tr class="odd">
+<td align="left">France</td>
+<td align="left">2002</td>
+<td align="left">59,893,849</td>
+</tr>
+<tr class="even">
+<td align="left">France</td>
+<td align="left">2003</td>
+<td align="left">60,270,320</td>
+</tr>
+<tr class="odd">
+<td align="left">Germany</td>
+<td align="left">2001</td>
+<td align="left">82,350,000</td>
+</tr>
+<tr class="even">
+<td align="left">Germany</td>
+<td align="left">2002</td>
+<td align="left">82,490,000</td>
+</tr>
+<tr class="odd">
+<td align="left">Germany</td>
+<td align="left">2003</td>
+<td align="left">82,530,000</td>
+</tr>
+</tbody>
+</table>
+<p>Since we are also dealing in the real world, you may have incomplete or incorrect data such as , ‘0’ population or the year ‘2099’. When the happens it is worth correcting the data if possible but most likely you can simply mark it as missing. For numeric data use a character that you likely would not need like ‘-99’ and for categorical data make the data as “NA”.</p>
+<p><strong>Analysis</strong></p>
+<p>Now that your data is looking spiffy, you need to analyse it. The big question here is are you summarizing it (ie. Showing what has happened in the past) or are you forecasting to predict the future. One is easier than the other. Using past data we don’t have to worry about model fit and strength as we know what happened. Prediction and forecasting require some higher levels of knowledge. So let’s keep it simple today and just go with summary. Basic graphs types for analysis include:</p>
+<p>Histogram- Shows the distribution of numeric data by a given values in a variable as a frequency. It is important to remember that histograms only take one variable at a time and usually measures the number of items with a given values. This graph can be extended to include normal distribution to see how your data makes an objective theoretical dataset.</p>
+<p><img src="/post/2018-10-21-be-practical_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Bar Charts- Used to compare the frequency of variables together. You can have two types of bar chart; stacked (where all the values are presented as segments of the same bar) or grouped (similar to a histogram where a bar is split by values within a variable or some other grouping variable).</p>
+<p><img src="/post/2018-10-21-be-practical_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Line Chart- Draws a continuous line between points on a X and Y axis where X is a continuous scale variable and Y is the measurement such as population over time. Can be fitted with a line of best fit to project the general direction of data for forecasting.</p>
+<p><img src="/post/2018-10-21-be-practical_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Scatterplot- Pointing independent points on a plane of X and Y where X is a continuous scale variable and Y is the measurement as a pair (ie. 2001,31021000). Here the points are not joined but some relationship between the X and Y point. Can also be fitted with a line of best fit to project the general direction of data for forecasting.</p>
+<p><img src="/post/2018-10-21-be-practical_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Pie Chart-There are also pie charts. But as a note of caution, they only really show how percentages interact and can be misleading if you have a category that dominates the chart forcing all the other categories into a small section of the graph that is unreadable.</p>
+<p><img src="/post/2018-10-21-be-practical_files/figure-html/unnamed-chunk-6-1.png" width="672" /> <strong>Visualization</strong></p>
+<p>After the whistle-stop tour of analysis we move on to visualization. The above graphs bleed into this topic, but there is still important work to be done. Do you have multiple graphs? Then arrange them from the broad to the specific like you are telling a story. If you use the same variable over again use the same colour so the customers eye can quickly recognize it. Avoid a lot of text in graphs unless necessary. Use simple names for all labels or axis. If you have many categories avoid using rainbow colours as the graph will look busy or try to reduce or separate the columns to make it more manageable.</p>
+<p>The beauty of the three-part rule means if a customer says “I would also like” or “can we also show” you can quickly interpret their needs and go back to the part of the analysis to be changed. If your analysis and graphs are configured correctly, they should cascade any changes automatically meaning you can quickly iterate on changes under you have a nice shiny output.</p>
+<p><strong>Wrapping Up</strong></p>
+<p>It is always important to specify your three-parts during or after your analysis by writing down what you did and how you did it. Don’t add it to your presentation as it will distract from the story you are telling. If the customer wants it it will be there for them, but typically they just want the graph. Having it written down in the three distinct parts allows for a clean organizational flow to you method that makes intuitive sense. A biproduct of writting your method down is that it teaches and reinforces the principles of good analysis to customers who are not data savvy. Not only will they get a top-notch product, but will also learn a little about what goes on behind the scenes.</p>
+<p>I hope this is helpful.What have your experiences been doing analysis? I want to hear from folks about your trials, tribulations and triumphs delivering analysis to customers. And if you can apply my method in your next project, please give a shout out to let me know how you got on.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="/2018/10/18/what-are-you-trying-to-do/"><i class="fa fa-chevron-circle-left"></i> What are you Trying to do?</a>
+        </li>
+        
+        
+        <li>
+            <a href="/2018/11/02/the-forest-and-the-trees/">The Forest and the Trees <i class="fa fa-chevron-circle-right"></i> </a>
+        </li>
+        
+    </ul>
+</section>
+    
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</body>
+
+</html>

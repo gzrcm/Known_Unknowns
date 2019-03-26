@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brexit on Known Unknowns</title>
+    <link>/categories/brexit/</link>
+    <description>Recent content in Brexit on Known Unknowns</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/brexit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Brexit</title>
+      <link>/2018/12/15/brexit/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/12/15/brexit/</guid>
+      <description>Back again! And what a month we have had in the UK. In case you didn’t know, I used to work in Canadian Politics, which compared to the rest of the world (especially these days) is quite tame. But politics is something I am passionate about. I like to think of myself as civilly minded democrat committed to reflecting the will of the people into robust and positive policy. Others might disagree, you know who you are ;).</description>
+    </item>
+    
+  </channel>
+</rss>

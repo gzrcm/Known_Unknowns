@@ -1,0 +1,161 @@
+---
+title: Quantifying Ignorance
+author: JB
+date: '2019-03-16'
+slug: quantifying-ignorance
+categories: []
+tags: []
+---
+
+```{r,echo = FALSE,message=FALSE,warning=FALSE}
+library(readxl)
+library(ggplot2)
+library (fmsb)
+library(plyr)
+library(ggradar)
+library(plotly)
+library(knitr)
+library(formattable)
+Skills <- read_excel("~/Documents/Known_Unknowns/data/Skills.xlsx")
+
+Skills_trans<-aggregate(Skills$Knowledge, by=list(Category=Skills$Category), FUN=sum)
+n <- Skills_trans$Category
+
+
+Skills_trans$"Total Score"<-c(10,10,20,25,35,10,10,25,20,15)
+names(Skills_trans)[2]<-paste("My Score")
+```
+
+Ever since I was a child I have had a dream, albeit a naïve one, to know everything. Obviously, I am not the most brilliant person imaginable, but what it has resulted in is an extreme generalist skill set. I have a BA as well as an MSc, I have worked in public and the private sector, I have done very manual jobs and new millennial jobs like quantitative research. I like to think of myself as a jack of all trades and master of none. 
+
+Marshall McLuhan once wrote that violence is a quest for identify. He predicted, quite rightly, that as the ‘global village’ grows people will realise that the little things that they feel make them unique are not so unique, resulting in a need to redefine or destroy others to make themselves ‘personalised.’ I mention this because I feel I am on that same quest, sans destorying people. Every time I complete an analysis, learn a skill, get a job or promotion social media confronts me with people with much more success, knowledge, experience who are achieving even greater things. 
+
+At this stage I have two options: Curl up in my bed and say "what’s the point, I will never be the best." Or I can get up every day and keep trying to make myself better and painfully recognize my limitations and try to overcome them. Iperfer to do the later.
+
+I am also a long term planner. I like to work in five year plans that include personal, professional and financial goals. It helps keep me focused and is usually a five-year projection with a slight ‘push’ goal. If I say I will normally save £100 a month, I force myself to save £110. If I say I will get a pay increase of 2% I fight for 3%. So I am always pushing, but realistically so I both achieve and avoid disappointment. It has been the same with my personal goals. For the past 10 years, becoming an intelligence analyst was that goal. In the process, I acquired more skills and seniority than the traditional role requires. Because of my own past success I have been forced to re-evaluate my future. The conclusion I reached is to pursue a career in Data Science. To achieve that goal I need a road map.
+
+The name of this blog known unknowns, is a infamously mocked, but poorly understood intelligence concept. However known unknowns are at the heart of what the intelligence community does. They are important because we need to understand what we do not know, which is just as important to decision making as what we do know. A blindly confident decision on half data is still a failure even if you trip into success becasue we have learned nothing and cannot replicate that result. So a known unknown implies two states of knowledge; a theoretical level of information necessary to know EVERYTHING about situation, and what you do know. In the gap is uncertainty that compromises our ability to achieve goals within the that situation. We want that risk of failure to be as low as possible.
+
+So here I am, a dream to be a data scientist and an intelligence problem of creating a road map to get there in an uncertain environment. 500 words later I get to the point of the post. Is there a way I can quantify what I don’t know about data science that will help me making a proper learning plan? Can I quantify my own ignorance? Let’s try!
+
+## Method
+
+As above, I need an external and objective criterion to know what the entirety of the problem is. For this I selected [Uducity’s Data Career Skills Guidance](https://1onjea25cyhx3uvxgs4vu325-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/Data-Career-Skills-Checklist.pdf). For those unfamiliar, Uducity a skills training platform for the digital economy. They put out great stuff on what employers of digital and tech industry are doing and looking for in employees. Udcity provides 28 skills in 10 categories they recommend a data scientist should have. I separated some of the skills out such as R/Python to R and Python. So I ended up with 36 skills.
+
+```{r,echo=FALSE,eval = TRUE,message=FALSE,warning=FALSE}
+formattable(Skills[,1:2])
+```
+
+Now I need to apply myself to these areas with some kind of grading option. I am considering three solutions:
+
+**Binary 1/0**- You have the skill or not. But this doesn’t give any nuances
+
+**Continuous Scale** – 1 to n with the numbers providing a level of expertise. More nuances without a great deal of complexity
+
+I have arbitrarily chosen a continues scale of 1 to 5. My fear of using binary or a 1 to 3 scale is that there will not be enough nuances to make decisions about my level knowledge and most items would either be 1 in binary or 2 in continuous scale. Anything higher than five will be too nuanced to draw comparative insight from. For defining the scores I tried to create a non-bias system for grading. I choose to use the amount of help I would need to apply the skill. Such as:
+
+**1**-	Could not perform on my own even with help
+
+**2**-	Would require assistance or training to implement
+
+**3**-	With self study/ guidance, could understand and apply
+
+**4**-	Likely apply with minimal assistance
+
+**5**-	Comfortable to perform on my own 
+
+I also added a second criteria which is my assessment of confidence in that skill as per the guidance of Applied Information Economics Estimative Calibration by Douglas Hubbard. This gives some check to my subjective skills assessment.
+
+**1**-	1% to 20% Confidence
+
+**2**-	21% to 40% Confidence
+
+**3**-	41% to 60% Confidence
+
+**4**-	61% to 80% Confidence
+
+**5**-	81% to 100% Confidence
+
+The intersection between the two points will also help me in understanding any over or under confidence in my skill set that will affect a learning plan. My completed dataset looks like:
+
+```{r,echo=FALSE,eval = TRUE,message=FALSE,warning=FALSE}
+formattable(Skills)
+```
+
+## Analysis
+
+The first thing we can look at is a radar graph that compares about my skill to the ‘idyllic’. To do this I first aggregated my scores board category. I then calculated the maximum score I could achieve in each category using our 1 to 5 scale and overlaid that on the graph.
+
+```{r,echo=FALSE, eval = TRUE,message=FALSE,warning=FALSE}
+p <- plot_ly(
+  type = 'scatterpolar',
+  fill = 'toself'
+) %>%
+  add_trace(
+    r = Skills_trans$`Total Score`,
+    theta = Skills_trans$Category,
+    name = 'Max Score'
+  ) %>%
+  add_trace(
+    r = Skills_trans$`My Score`,
+    theta = Skills_trans$Category,
+    name = 'My Score'
+  ) %>%
+  layout(
+    polar = list(
+      radialaxis = list(
+        visible = T,
+        range = c(0,35)
+      )
+    )
+  )
+p
+```
+
+While this graph is interesting we need to hone in on areas of weakness for an individual learning plan. We can do that by looking at the percentage I scored against the total points available. 
+
+```{r,echo=FALSE,eval = TRUE,message=FALSE,warning=FALSE}
+Skills_trans$Percent<-round((Skills_trans$`My Score`/Skills_trans$`Total Score`)*100,2)
+
+widget_formattable = formattable(Skills_trans, list(
+  Percent = color_tile('white','olivedrab4')
+))
+widget_formattable
+```
+
+So in what board categories am I under developed? It looks like Statistics and Software Skills and experimental design are under 70%. I do find Statistics is a bit surprising. Let’s go deeper into the skills again.
+
+```{r,echo=FALSE,eval = TRUE,message=FALSE,warning=FALSE}
+Bad<-subset(Skills,Category %in% c('Software Skills','Statistics','Experiment Design'))
+
+widget_formattable = formattable(Bad[order(Bad$Knowledge),], list(
+  Knowledge = color_tile('white','olivedrab4')
+))
+widget_formattable
+```
+
+Okay, so statistics is lowered by my lack of experience in A/B Testing (A topic I know on paper, but have never had to do), but in terms of more traditional statistics I am alright. For software skills, I am being let down by my lack of 'scale' experience. Point taken! Any company I have worked for was desktop only. And for experimental design it is a mixed bag. In some areas, I look great and in others, like bootstrapping and simulation I need some work.Great so we now have a priority list of items to tackle in our learning plan!
+
+Let's do one more check though. I want to make sure that I am not being to over confident about my skills. So what do the scores look like if we scatter plot them and add a linear trend line?
+
+```{r,echo=FALSE,eval = TRUE,message=FALSE,warning=FALSE}
+ggplot(Skills,aes(x=Confidence,y=Knowledge))+stat_summary(fun.data=mean_cl_normal) + 
+  geom_smooth(method='lm',formula=y~x, color="royalblue1")+geom_point(color="red2")+theme_classic()
+```
+
+Okay, this is interesting. There appears to be a slight negative relationship between my knowledge and confidence. If I believe I have little knowledge of something I am confident in that assessment, but as I feel my knowledge increases my confidence in that assessment goes down. So if anything it appears I am under confident in my own abilities. #humble
+
+## Conclusion
+
+The tagline for this blog is Albert Einstein’s quote;
+
+>As our circle of knowledge expands, so does the circumference of darkness surrounding it.
+
+Being under confident means I am at least internally consistent with that belief. Obviously there are problems with my analysis. Having a more objective knowledge score would be a big help and would negate the need for a confidence score. There are also many skills I do possess that are necessary for a data scientist that do not appear in this list such as; communication and presentation skills, and my experience in intelligence that is currently summed up here as ‘Asking Questions.’ This is as far as I have gotten. What do you think of my approach? Is there any other way I am quantify what I don’t know? My plan is to make is a project which I return to from time to time, update the data and keep exploring. 
+
+<<<<<<< HEAD
+Wish me luck!
+=======
+Wish me luck!
+
+>>>>>>> 9663dcb88c74a9939a2cf4450820ca7b35b0a77d

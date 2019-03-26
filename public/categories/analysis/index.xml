@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analysis on Known Unknowns</title>
+    <link>/categories/analysis/</link>
+    <description>Recent content in Analysis on Known Unknowns</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Leverage</title>
+      <link>/2018/11/09/leverage/</link>
+      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/11/09/leverage/</guid>
+      <description>Douglas Hubbard was famous for saying, “you need less data than you think you do, and you have more data than you think you have.” I generally agree with. Simple models that explain simple issue are always favoured over the more complex black-box models that are all signing and all dancing.
+But what happens when we disregard Hubbard’s adage? This is where leveraging happens. Incorrect data is used in inappropriate ways and extrapolated to fill gaps it should not.</description>
+    </item>
+    
+    <item>
+      <title>Be Practical!</title>
+      <link>/2018/10/21/be-practical/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/10/21/be-practical/</guid>
+      <description>I thought I would change gears into something more practical this week, delivering a basic analytic product end to end. I will preface this with I hate doing analysis in Excel, but the world’s most prolific software isn’t going anytime soon. To be fair, most people are comfortable with it so that is what we will discuss in this post.
+What I always recommend to people is they treat their analysis as thee distinct parts.</description>
+    </item>
+    
+  </channel>
+</rss>

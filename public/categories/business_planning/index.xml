@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Business_planning on Known Unknowns</title>
+    <link>/categories/business_planning/</link>
+    <description>Recent content in Business_planning on Known Unknowns</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/business_planning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Forest and the Trees</title>
+      <link>/2018/11/02/the-forest-and-the-trees/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/11/02/the-forest-and-the-trees/</guid>
+      <description>I feel like I make a lot of school days’ comparisons, asking readers to harken back to their teenage years when their unbridled dreams stretched to weekend plans and maybe getting a summer job. I don’t like to dwell on the image, but when we are young we cannot conceive of long term plans or consequences. To borrow a term from my high history teacher, “you are here to learn how to be adults.</description>
+    </item>
+    
+  </channel>
+</rss>

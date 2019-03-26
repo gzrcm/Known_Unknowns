@@ -1,0 +1,1272 @@
+---
+title: Quantifying Ignorance
+author: JB
+date: '2019-03-16'
+slug: quantifying-ignorance
+categories: []
+tags: []
+---
+
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/plotly-binding/plotly.js"></script>
+<script src="/rmarkdown-libs/typedarray/typedarray.min.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+<link href="/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/plotly-main/plotly-latest.min.js"></script>
+
+
+<p>Ever since I was a child I have had a dream, albeit a naïve one, to know everything. Obviously, I am not the most brilliant person imaginable, but what it has resulted in is an extreme generalist skill set. I have a BA as well as an MSc, I have worked in public and the private sector, I have done very manual jobs and new millennial jobs like quantitative research. I like to think of myself as a jack of all trades and master of none.</p>
+<p>Marshall McLuhan once wrote that violence is a quest for identify. He predicted, quite rightly, that as the ‘global village’ grows people will realise that the little things that they feel make them unique are not so unique, resulting in a need to redefine or destroy others to make themselves ‘personalised.’ I mention this because I feel I am on that same quest, sans destorying people. Every time I complete an analysis, learn a skill, get a job or promotion social media confronts me with people with much more success, knowledge, experience who are achieving even greater things.</p>
+<p>At this stage I have two options: Curl up in my bed and say “what’s the point, I will never be the best.” Or I can get up every day and keep trying to make myself better and painfully recognize my limitations and try to overcome them. Iperfer to do the later.</p>
+<p>I am also a long term planner. I like to work in five year plans that include personal, professional and financial goals. It helps keep me focused and is usually a five-year projection with a slight ‘push’ goal. If I say I will normally save £100 a month, I force myself to save £110. If I say I will get a pay increase of 2% I fight for 3%. So I am always pushing, but realistically so I both achieve and avoid disappointment. It has been the same with my personal goals. For the past 10 years, becoming an intelligence analyst was that goal. In the process, I acquired more skills and seniority than the traditional role requires. Because of my own past success I have been forced to re-evaluate my future. The conclusion I reached is to pursue a career in Data Science. To achieve that goal I need a road map.</p>
+<p>The name of this blog known unknowns, is a infamously mocked, but poorly understood intelligence concept. However known unknowns are at the heart of what the intelligence community does. They are important because we need to understand what we do not know, which is just as important to decision making as what we do know. A blindly confident decision on half data is still a failure even if you trip into success becasue we have learned nothing and cannot replicate that result. So a known unknown implies two states of knowledge; a theoretical level of information necessary to know EVERYTHING about situation, and what you do know. In the gap is uncertainty that compromises our ability to achieve goals within the that situation. We want that risk of failure to be as low as possible.</p>
+<p>So here I am, a dream to be a data scientist and an intelligence problem of creating a road map to get there in an uncertain environment. 500 words later I get to the point of the post. Is there a way I can quantify what I don’t know about data science that will help me making a proper learning plan? Can I quantify my own ignorance? Let’s try!</p>
+<div id="method" class="section level2">
+<h2>Method</h2>
+<p>As above, I need an external and objective criterion to know what the entirety of the problem is. For this I selected <a href="https://1onjea25cyhx3uvxgs4vu325-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/Data-Career-Skills-Checklist.pdf">Uducity’s Data Career Skills Guidance</a>. For those unfamiliar, Uducity a skills training platform for the digital economy. They put out great stuff on what employers of digital and tech industry are doing and looking for in employees. Udcity provides 28 skills in 10 categories they recommend a data scientist should have. I separated some of the skills out such as R/Python to R and Python. So I ended up with 36 skills.</p>
+<table class="table table-condensed">
+<thead>
+<tr>
+<th style="text-align:right;">
+Category
+</th>
+<th style="text-align:right;">
+Skills
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+Programming and Tools
+</td>
+<td style="text-align:right;">
+Spreadsheets
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Programming and Tools
+</td>
+<td style="text-align:right;">
+SQL
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Programming and Tools
+</td>
+<td style="text-align:right;">
+R
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Programming and Tools
+</td>
+<td style="text-align:right;">
+Python
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Programming and Tools
+</td>
+<td style="text-align:right;">
+Jupyter
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Statistics
+</td>
+<td style="text-align:right;">
+Descriptive
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Statistics
+</td>
+<td style="text-align:right;">
+Inferential
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Statistics
+</td>
+<td style="text-align:right;">
+A/B Testing
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Mathematics
+</td>
+<td style="text-align:right;">
+Algebra
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Mathematics
+</td>
+<td style="text-align:right;">
+Notation
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Wrangling
+</td>
+<td style="text-align:right;">
+Data Cleaning
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Wrangling
+</td>
+<td style="text-align:right;">
+Data Blending
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Wrangling
+</td>
+<td style="text-align:right;">
+Data Transforming
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Wrangling
+</td>
+<td style="text-align:right;">
+Data Formatting
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Wrangling
+</td>
+<td style="text-align:right;">
+Relational Databases (SQL)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Communication and Data Visual
+</td>
+<td style="text-align:right;">
+Programming
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Communication and Data Visual
+</td>
+<td style="text-align:right;">
+Dashboarding
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Intuition
+</td>
+<td style="text-align:right;">
+Asking Questions
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Intuition
+</td>
+<td style="text-align:right;">
+Becoming Subject Matter Experts
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Intuition
+</td>
+<td style="text-align:right;">
+Business and product things
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Intuition
+</td>
+<td style="text-align:right;">
+Practice!
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Machine Learning
+</td>
+<td style="text-align:right;">
+Supervised Learning
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Machine Learning
+</td>
+<td style="text-align:right;">
+Unsupervised Learning
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Coding Testing. Debugging
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Version Control
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Model Deployment
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Data at Scale
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Advanced Mathematics
+</td>
+<td style="text-align:right;">
+Linear Algebra
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Advanced Mathematics
+</td>
+<td style="text-align:right;">
+Calculus
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Controlling variables and choosing good control and testing groups
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Sample Size and Power law
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Confidence level
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+SMART experiments: Specific, Measurable, Actionable, Realistic, Timely
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Bayesian Statistics
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Bootstrapping
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Simulation
+</td>
+</tr>
+</tbody>
+</table>
+<p>Now I need to apply myself to these areas with some kind of grading option. I am considering three solutions:</p>
+<p><strong>Binary 1/0</strong>- You have the skill or not. But this doesn’t give any nuances</p>
+<p><strong>Continuous Scale</strong> – 1 to n with the numbers providing a level of expertise. More nuances without a great deal of complexity</p>
+<p>I have arbitrarily chosen a continues scale of 1 to 5. My fear of using binary or a 1 to 3 scale is that there will not be enough nuances to make decisions about my level knowledge and most items would either be 1 in binary or 2 in continuous scale. Anything higher than five will be too nuanced to draw comparative insight from. For defining the scores I tried to create a non-bias system for grading. I choose to use the amount of help I would need to apply the skill. Such as:</p>
+<p><strong>1</strong>- Could not perform on my own even with help</p>
+<p><strong>2</strong>- Would require assistance or training to implement</p>
+<p><strong>3</strong>- With self study/ guidance, could understand and apply</p>
+<p><strong>4</strong>- Likely apply with minimal assistance</p>
+<p><strong>5</strong>- Comfortable to perform on my own</p>
+<p>I also added a second criteria which is my assessment of confidence in that skill as per the guidance of Applied Information Economics Estimative Calibration by Douglas Hubbard. This gives some check to my subjective skills assessment.</p>
+<p><strong>1</strong>- 1% to 20% Confidence</p>
+<p><strong>2</strong>- 21% to 40% Confidence</p>
+<p><strong>3</strong>- 41% to 60% Confidence</p>
+<p><strong>4</strong>- 61% to 80% Confidence</p>
+<p><strong>5</strong>- 81% to 100% Confidence</p>
+<p>The intersection between the two points will also help me in understanding any over or under confidence in my skill set that will affect a learning plan. My completed dataset looks like:</p>
+<table class="table table-condensed">
+<thead>
+<tr>
+<th style="text-align:right;">
+Category
+</th>
+<th style="text-align:right;">
+Skills
+</th>
+<th style="text-align:right;">
+Knowledge
+</th>
+<th style="text-align:right;">
+Confidence
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+Programming and Tools
+</td>
+<td style="text-align:right;">
+Spreadsheets
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Programming and Tools
+</td>
+<td style="text-align:right;">
+SQL
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Programming and Tools
+</td>
+<td style="text-align:right;">
+R
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Programming and Tools
+</td>
+<td style="text-align:right;">
+Python
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Programming and Tools
+</td>
+<td style="text-align:right;">
+Jupyter
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Statistics
+</td>
+<td style="text-align:right;">
+Descriptive
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Statistics
+</td>
+<td style="text-align:right;">
+Inferential
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Statistics
+</td>
+<td style="text-align:right;">
+A/B Testing
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Mathematics
+</td>
+<td style="text-align:right;">
+Algebra
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Mathematics
+</td>
+<td style="text-align:right;">
+Notation
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Wrangling
+</td>
+<td style="text-align:right;">
+Data Cleaning
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Wrangling
+</td>
+<td style="text-align:right;">
+Data Blending
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Wrangling
+</td>
+<td style="text-align:right;">
+Data Transforming
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Wrangling
+</td>
+<td style="text-align:right;">
+Data Formatting
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Wrangling
+</td>
+<td style="text-align:right;">
+Relational Databases (SQL)
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Communication and Data Visual
+</td>
+<td style="text-align:right;">
+Programming
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Communication and Data Visual
+</td>
+<td style="text-align:right;">
+Dashboarding
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Intuition
+</td>
+<td style="text-align:right;">
+Asking Questions
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Intuition
+</td>
+<td style="text-align:right;">
+Becoming Subject Matter Experts
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Intuition
+</td>
+<td style="text-align:right;">
+Business and product things
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Intuition
+</td>
+<td style="text-align:right;">
+Practice!
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Machine Learning
+</td>
+<td style="text-align:right;">
+Supervised Learning
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Machine Learning
+</td>
+<td style="text-align:right;">
+Unsupervised Learning
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Coding Testing. Debugging
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Version Control
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Model Deployment
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Data at Scale
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Advanced Mathematics
+</td>
+<td style="text-align:right;">
+Linear Algebra
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Advanced Mathematics
+</td>
+<td style="text-align:right;">
+Calculus
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Controlling variables and choosing good control and testing groups
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Sample Size and Power law
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Confidence level
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+SMART experiments: Specific, Measurable, Actionable, Realistic, Timely
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Bayesian Statistics
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Bootstrapping
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Simulation
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="analysis" class="section level2">
+<h2>Analysis</h2>
+<p>The first thing we can look at is a radar graph that compares about my skill to the ‘idyllic’. To do this I first aggregated my scores board category. I then calculated the maximum score I could achieve in each category using our 1 to 5 scale and overlaid that on the graph.</p>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<<<<<<< HEAD
+<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"e5353118a2e":["function () ","plotlyVisDat"]},"cur_data":"e5353118a2e","attrs":{"e5353118a2e":{"fill":"toself","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatterpolar"},"e5353118a2e.1":{"fill":"toself","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatterpolar","r":[10,10,20,25,35,10,10,25,20,15],"theta":["Advanced Mathematics","Communication and Data Visual","Data Intuition","Data Wrangling","Experiment Design","Machine Learning","Mathematics","Programming and Tools","Software Skills","Statistics"],"name":"Max Score","inherit":true},"e5353118a2e.2":{"fill":"toself","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatterpolar","r":[7,9,18,19,23,7,8,18,9,9],"theta":["Advanced Mathematics","Communication and Data Visual","Data Intuition","Data Wrangling","Experiment Design","Machine Learning","Mathematics","Programming and Tools","Software Skills","Statistics"],"name":"My Score","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"polar":{"radialaxis":{"visible":true,"range":[0,35]}},"hovermode":"closest","showlegend":true},"source":"A","config":{"cloud":false},"data":[{"fillcolor":"rgba(31,119,180,0.5)","fill":"toself","type":"scatterpolar","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"line":{"color":"rgba(31,119,180,1)"},"frame":null},{"fillcolor":"rgba(255,127,14,0.5)","fill":"toself","type":"scatterpolar","r":[10,10,20,25,35,10,10,25,20,15],"theta":["Advanced Mathematics","Communication and Data Visual","Data Intuition","Data Wrangling","Experiment Design","Machine Learning","Mathematics","Programming and Tools","Software Skills","Statistics"],"name":"Max Score","mode":"markers","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"line":{"color":"rgba(255,127,14,1)"},"frame":null},{"fillcolor":"rgba(44,160,44,0.5)","fill":"toself","type":"scatterpolar","r":[7,9,18,19,23,7,8,18,9,9],"theta":["Advanced Mathematics","Communication and Data Visual","Data Intuition","Data Wrangling","Experiment Design","Machine Learning","Mathematics","Programming and Tools","Software Skills","Statistics"],"name":"My Score","mode":"markers","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"line":{"color":"rgba(44,160,44,1)"},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+=======
+<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"9fa75def797":["function () ","plotlyVisDat"]},"cur_data":"9fa75def797","attrs":{"9fa75def797":{"fill":"toself","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatterpolar"},"9fa75def797.1":{"fill":"toself","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatterpolar","r":[10,10,20,25,35,10,10,25,20,15],"theta":["Advanced Mathematics","Communication and Data Visual","Data Intuition","Data Wrangling","Experiment Design","Machine Learning","Mathematics","Programming and Tools","Software Skills","Statistics"],"name":"Max Score","inherit":true},"9fa75def797.2":{"fill":"toself","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatterpolar","r":[7,9,18,19,23,7,8,18,9,9],"theta":["Advanced Mathematics","Communication and Data Visual","Data Intuition","Data Wrangling","Experiment Design","Machine Learning","Mathematics","Programming and Tools","Software Skills","Statistics"],"name":"My Score","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"polar":{"radialaxis":{"visible":true,"range":[0,35]}},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"data":[{"fillcolor":"rgba(31,119,180,0.5)","fill":"toself","type":"scatterpolar","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"line":{"color":"rgba(31,119,180,1)"},"frame":null},{"fillcolor":"rgba(255,127,14,0.5)","fill":"toself","type":"scatterpolar","r":[10,10,20,25,35,10,10,25,20,15],"theta":["Advanced Mathematics","Communication and Data Visual","Data Intuition","Data Wrangling","Experiment Design","Machine Learning","Mathematics","Programming and Tools","Software Skills","Statistics"],"name":"Max Score","mode":"markers","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"line":{"color":"rgba(255,127,14,1)"},"frame":null},{"fillcolor":"rgba(44,160,44,0.5)","fill":"toself","type":"scatterpolar","r":[7,9,18,19,23,7,8,18,9,9],"theta":["Advanced Mathematics","Communication and Data Visual","Data Intuition","Data Wrangling","Experiment Design","Machine Learning","Mathematics","Programming and Tools","Software Skills","Statistics"],"name":"My Score","mode":"markers","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"line":{"color":"rgba(44,160,44,1)"},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script>
+>>>>>>> 9663dcb88c74a9939a2cf4450820ca7b35b0a77d
+<p>While this graph is interesting we need to hone in on areas of weakness for an individual learning plan. We can do that by looking at the percentage I scored against the total points available.</p>
+<table class="table table-condensed">
+<thead>
+<tr>
+<th style="text-align:right;">
+Category
+</th>
+<th style="text-align:right;">
+My Score
+</th>
+<th style="text-align:right;">
+Total Score
+</th>
+<th style="text-align:right;">
+Percent
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+Advanced Mathematics
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #abbe84">70.00</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Communication and Data Visual
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #698b22">90.00</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Intuition
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #698b22">90.00</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Data Wrangling
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #97af66">76.00</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:right;">
+35
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #b9c999">65.71</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Machine Learning
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #abbe84">70.00</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Mathematics
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #8aa453">80.00</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Programming and Tools
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #a5b97a">72.00</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffffff">45.00</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Statistics
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #cdd8b5">60.00</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>So in what board categories am I under developed? It looks like Statistics and Software Skills and experimental design are under 70%. I do find Statistics is a bit surprising. Let’s go deeper into the skills again.</p>
+<table class="table table-condensed">
+<thead>
+<tr>
+<th style="text-align:right;">
+Category
+</th>
+<th style="text-align:right;">
+Skills
+</th>
+<th style="text-align:right;">
+Knowledge
+</th>
+<th style="text-align:right;">
+Confidence
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+Statistics
+</td>
+<td style="text-align:right;">
+A/B Testing
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffffff">1</span>
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Data at Scale
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffffff">1</span>
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Model Deployment
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #cdd8b5">2</span>
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Bootstrapping
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #cdd8b5">2</span>
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Coding Testing. Debugging
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #9bb16b">3</span>
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Software Skills
+</td>
+<td style="text-align:right;">
+Version Control
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #9bb16b">3</span>
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Controlling variables and choosing good control and testing groups
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #9bb16b">3</span>
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Sample Size and Power law
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #9bb16b">3</span>
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Simulation
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #9bb16b">3</span>
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Statistics
+</td>
+<td style="text-align:right;">
+Descriptive
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #698b22">4</span>
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Statistics
+</td>
+<td style="text-align:right;">
+Inferential
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #698b22">4</span>
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Confidence level
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #698b22">4</span>
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+SMART experiments: Specific, Measurable, Actionable, Realistic, Timely
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #698b22">4</span>
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+Experiment Design
+</td>
+<td style="text-align:right;">
+Bayesian Statistics
+</td>
+<td style="text-align:right;">
+<span style="display: block; padding: 0 4px; border-radius: 4px; background-color: #698b22">4</span>
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+</tbody>
+</table>
+<p>Okay, so statistics is lowered by my lack of experience in A/B Testing (A topic I know on paper, but have never had to do), but in terms of more traditional statistics I am alright. For software skills, I am being let down by my lack of ‘scale’ experience. Point taken! Any company I have worked for was desktop only. And for experimental design it is a mixed bag. In some areas, I look great and in others, like bootstrapping and simulation I need some work.Great so we now have a priority list of items to tackle in our learning plan!</p>
+<p>Let’s do one more check though. I want to make sure that I am not being to over confident about my skills. So what do the scores look like if we scatter plot them and add a linear trend line?</p>
+<p><img src="/post/2019-03-16-quantifying-ignorance_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Okay, this is interesting. There appears to be a slight negative relationship between my knowledge and confidence. If I believe I have little knowledge of something I am confident in that assessment, but as I feel my knowledge increases my confidence in that assessment goes down. So if anything it appears I am under confident in my own abilities. #humble</p>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>The tagline for this blog is Albert Einstein’s quote;</p>
+<blockquote>
+<p>As our circle of knowledge expands, so does the circumference of darkness surrounding it.</p>
+</blockquote>
+<p>Being under confident means I am at least internally consistent with that belief. Obviously there are problems with my analysis. Having a more objective knowledge score would be a big help and would negate the need for a confidence score. There are also many skills I do possess that are necessary for a data scientist that do not appear in this list such as; communication and presentation skills, and my experience in intelligence that is currently summed up here as ‘Asking Questions.’ This is as far as I have gotten. What do you think of my approach? Is there any other way I am quantify what I don’t know? My plan is to make is a project which I return to from time to time, update the data and keep exploring.</p>
+<p>Wish me luck!</p>
+</div>

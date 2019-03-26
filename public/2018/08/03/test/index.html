@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Known Unknowns</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A website built through Hugo and blogdown." />
+  <meta name="author" content="JB" />
+  <meta name="generator" content="Hugo 0.45.1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Known Unknowns</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+      <p><em>As our circle of knowledge expands, so does the circumference of darkness surrounding it.<br/>-Albert Einstein</em></p>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="mailto:jacob.kaelan@gmail.com">
+                <i class="fa-li fa  fa-lg"></i><span>Email</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="https://github.com/gzrcm">
+                <i class="fa-li fa  fa-lg"></i><span>GitHub</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="https://uk.linkedin.com/in/jacobbaisley">
+                <i class="fa-li fa  fa-lg"></i><span>Linkedin</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/projects/">
+                <i class="fa-li fa  fa-lg"></i><span>Projects</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Test</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2018-08-03T00:00:00Z">Aug 3, 2018</time>
+        </li>
+        
+        
+
+        
+
+        <li>1 min read</li>
+    </ul>
+</aside>
+    
+
+    <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet/leaflet.js"></script>
+<link href="/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+
+
+<p>Something</p>
+<div id="map-of-current-development-sites" class="section level3">
+<h3>Map of Current Development Sites</h3>
+<pre class="r"><code>m &lt;- leaflet(Test) %&gt;%
+  addTiles() %&gt;%  addCircleMarkers(~Long, ~Lat, popup = ~Development, color=colorFactors(Test$Development))
+m</code></pre>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[51.493131,51.493131,51.493131,51.493131,51.493131,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493791,51.493333,51.493333,51.493333,51.493333,51.493333,51.493279,51.493279,51.493279,51.493279,51.493279,51.493129,51.493129,51.493129,51.493129,51.493129,51.494556,51.494891,51.494891,51.494891,51.494891,51.494891,51.497174,51.497174,51.497174,51.497174,51.497174,51.497174,51.497174,51.497174,51.497174,51.497174,51.501141,51.501141,51.501141,51.501141,51.501141,51.490868,51.490868,51.490868,51.490868,51.490868,51.496846,51.496846,51.496846,51.496846,51.496846,51.496846,51.496846,51.496846,51.493855,51.493855,51.493855,51.493855,51.493855,51.493855,51.493855,51.493855,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.49387,51.495862,51.495862,51.495862,51.495862,51.498488,51.498488,51.498488,51.498488,51.498488,51.498488,51.498488,51.498488,51.498488,51.498488,51.498488,51.498488,51.497618,51.497618,51.497618,51.497618,51.497618,51.497618,51.497618,51.497618,51.497618,51.497618,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556,51.494556],[0.078603,0.078603,0.078603,0.078603,0.078603,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.078892,0.0789,0.0789,0.0789,0.0789,0.0789,0.079388,0.079388,0.079388,0.079388,0.079388,0.079755,0.079755,0.079755,0.079755,0.079755,0.080425,0.085829,0.085829,0.085829,0.085829,0.085829,0.08795,0.08795,0.08795,0.08795,0.08795,0.08795,0.08795,0.08795,0.08795,0.08795,0.088895,0.088895,0.088895,0.088895,0.088895,0.090572,0.090572,0.090572,0.090572,0.090572,0.092704,0.092704,0.092704,0.092704,0.092704,0.092704,0.092704,0.092704,0.09307,0.09307,0.09307,0.09307,0.09307,0.09307,0.09307,0.09307,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.097248,0.098479,0.098479,0.098479,0.098479,0.10445,0.10445,0.10445,0.10445,0.10445,0.10445,0.10445,0.10445,0.10445,0.10445,0.10445,0.10445,0.10585,0.10585,0.10585,0.10585,0.10585,0.10585,0.10585,0.10585,0.10585,0.10585,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425,0.080425],10,null,null,{"interactive":true,"className":"","stroke":true,"color":["#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#F8766D","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#00BFC4","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#7CAE00","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF","#C77CFF"],"fillOpacity":0.2},null,null,["Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Lake Head","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Sunshine Gardens","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Redwood Estate","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights","Uptown Heights"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[51.490868,51.501141],"lng":[0.078603,0.10585]}},"evals":[],"jsHooks":[]}</script>
+</div>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="/2018/08/02/the-analyst-toothbrush/"><i class="fa fa-chevron-circle-left"></i> The Analyst Toothbrush</a>
+        </li>
+        
+        
+    </ul>
+</section>
+    
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

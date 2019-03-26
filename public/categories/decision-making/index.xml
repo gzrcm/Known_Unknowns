@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decision Making on Known Unknowns</title>
+    <link>/categories/decision-making/</link>
+    <description>Recent content in Decision Making on Known Unknowns</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/decision-making/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quantifying Ignorance</title>
+      <link>/2019/03/16/quantifying-ignorance/</link>
+      <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/03/16/quantifying-ignorance/</guid>
+      <description>Ever since I was a child I have had a dream, albeit a naïve one, to know everything. Obviously, I am not the most brilliant person imaginable, but what it has resulted in is an extreme generalist skill set. I have a BA as well as an MSc, I have worked in public and the private sector, I have done very manual jobs and new millennial jobs like quantitative research.</description>
+    </item>
+    
+    <item>
+      <title>Brexit</title>
+      <link>/2018/12/15/brexit/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/12/15/brexit/</guid>
+      <description>Back again! And what a month we have had in the UK. In case you didn’t know, I used to work in Canadian Politics, which compared to the rest of the world (especially these days) is quite tame. But politics is something I am passionate about. I like to think of myself as civilly minded democrat committed to reflecting the will of the people into robust and positive policy. Others might disagree, you know who you are ;).</description>
+    </item>
+    
+  </channel>
+</rss>

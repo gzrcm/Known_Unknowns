@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cognative Bias on Known Unknowns</title>
+    <link>/categories/cognative-bias/</link>
+    <description>Recent content in Cognative Bias on Known Unknowns</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/cognative-bias/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Brain Failures</title>
+      <link>/2018/10/09/brain-failures/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/10/09/brain-failures/</guid>
+      <description>There is a great clip online of Neil deGrasse Tyson describing optical illusions as “Brain Failures.” Like most of Tyson’s appearances its played for laughs while secretly teaching you about science, but analysts know this true. So true in fact that the great Richard Heuer wrote a manual for the CIA on how to over come cognitive bias called the Psychology of Intelligence Analysis.
+Heuer explores “brain failures” by dichotomizing the causes and exploring the effects.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+---
+title: Test
+author: JB
+date: '2018-08-03'
+slug: test
+categories: []
+tags: []
+---
+Something
+
+
+```{r setup, include=FALSE}
+library(leaflet)
+library(ggplot2)
+library(plyr)
+library(dplyr)
+library(plotly)
+library(lubridate)
+library(readr)
+
+Test<- read_csv("/Users/face/Desktop/Known_Unknowns/Known Unknowns/content/post/Test.csv")
+
+colorFactors = colorFactor(c('#F8766D', '#7CAE00', '#00BFC4', '#C77CFF'),
+                           domain = Test$Development)
+```
+
+### Map of Current Development Sites
+    
+```{r}
+m <- leaflet(Test) %>%
+  addTiles() %>%  addCircleMarkers(~Long, ~Lat, popup = ~Development, color=colorFactors(Test$Development))
+m
+```

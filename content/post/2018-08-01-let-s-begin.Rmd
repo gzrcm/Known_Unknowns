@@ -1,0 +1,17 @@
+---
+title: Let’s Begin!
+author: JB
+date: '2018-08-01'
+slug: let-s-begin
+categories:
+  - Intelligence Analysis
+tags: []
+---
+
+As Albert Einstein said, “As our circle of knowledge expands, so does the circumference of darkness surrounding it.” Ironically the more we learn the less we realise we know. It is that simple and humbling thought that attracted me, in part, to intelligence analysis. The idea that our hubris is a demonstration of ignorance, but acknowledgment of ignorance has a certain awe associated with it. What I imagine is close a religious experience.
+
+Intelligence is less about knowing and more about what we don’t yet know. Hence the name of this blog, Known Unknowns. The term was first used by Luft and Ingham, two American psychologists who used the technique to help their patients better relate to each other and understand the bias of evaluating unknown information.
+
+For me, Known Unknowns is a call to continuous improvement, a recognition of our cognitive limitations and opening ourselves to being amazed by the methods and examples of science at work.
+
+But intelligence is also a journey to understanding. That journey is not a singular activity, but a communal one as demonstrated by countless analytical techniques that require collaboration and challenge.  So I hope someone reading this blog will join me and share their experience, pitfall, and triumphs. Let’s begin, together.

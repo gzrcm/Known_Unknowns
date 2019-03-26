@@ -1,0 +1,38 @@
+---
+title: Tyranny of the Mean
+author: JB
+date: '2019-02-03'
+slug: tyranny-of-the-mean
+categories: []
+tags: []
+---
+
+We all remember studying central tendency, right? Mean, Median and Mode. I am willing to bet that your teachers also spent more time on mean because it had some maths to it. So why the other two?
+
+Look at the diagram below, Full credit to [Dr. Philip Lee Miller](https://blog.antiaging.com/tyranny-tsh-thyroid-testing/) who created it. Can we say that the “mean” is representative of this population? Well, no.
+
+<center><img src="/img/Tyranny1.png" alt="Drawing" style="width: 600px;"/></center>
+
+[Todd Rose](https://www.thestar.com/news/insight/2016/01/16/when-us-air-force-discovered-the-flaw-of-averages.html) from the Star wrote an excellent piece on the history of this problem using the US fighter pilots example. “In the late 1940s, the United States air force had a serious problem: its pilots could not keep control of their planes… The problems were so frequent and involved so many different aircraft that the air force had an alarming, life-or-death mystery on its hands.” Turns out the cockpits were designed for the “average” pilot, but when we took our incredibly average pilot and saw how many pilots conformed to those idealised dimensions it turns out it was very few. In an attempt to make a cockpit for everyone we really made it for no one.
+
+That’s because the mean is a representation of a sample or population, it is not always one of the population and not necessary real. The next logical step is to learn about things like skew and kurtosis as a quick check to understand the size and shape of our populations. 
+
+Data Scientists typically do not have time to either generalise or theorize to single models, opting to solve practical quick turnaround problems for better or worse with a variety of methods and tools. “How do I convert website traffic to customers”, “How can we anticipate and quick route a web user to the information they want?”, “Can we train a machine to troll though all these comments to find insight?” Because these problems are practical they also carry a great deal of context with them, individual patterns of behaviour that need to be teased out of gigabytes of data and tell individual narratives. So I need to do it quick but also not simplistically and relate back to granular examples? Hmmm….
+
+Imagine two stories:
+
+_A= An average customer will click around your store for 3 minutes, buy 1 item, worth £20_
+
+It’s good, but does it apply to everyone” What if we applied something to Principle Components Analysis (PCA) to this issue. Well we likely end up with segmentation. We are still generalising but now we have a more robust method.
+
+_B= High spending customers, go directly to a product, buy 3 to 5 items, worth £100 and up_
+
+Medium spending customers, click around for 3 minutes, buy 1 to 3 items, worth £50 to £100
+Low spending customers, click around for over 5 minutes, buy 1 item, worth £10
+
+Now we can start marketing; bundles to the high spending, perhaps we research more on medium customers and why the click around (reading reviews, comparing prices, etc.), better adverts to the lower. We can start converting and maturing our existing customers because the average ‘customer’ is a statistical myth. 
+
+We can push this further into the domains of the google and Facebook ad algorithms that are building individual models for *YOU*, like some Black Mirror stuff. But I digress, the mean is a quick and simple way of making some good generalisations about a given issue. But I strongly encourage anyone using that information to make decisions about people or even for yourselves, consider a second opinion or risk serving no one. 
+
+Sic Semper Tyrannis!
+

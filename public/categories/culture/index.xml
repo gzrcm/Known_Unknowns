@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Culture on Known Unknowns</title>
+    <link>/categories/culture/</link>
+    <description>Recent content in Culture on Known Unknowns</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/culture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What are you Trying to do?</title>
+      <link>/2018/10/18/what-are-you-trying-to-do/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/10/18/what-are-you-trying-to-do/</guid>
+      <description>What are you trying to do? That’s a question I have to ask clients all too often. This is typically necessitated for one of two reasons: the decision-maker assumes I know something I do not that would help clarify the problem, or more likely the requirements have been poorly articulated. Requirements that are critical to actually doing intelligence. Otherwise we all stumble aimlessly in the dark looking for success.
+Analysts are a sounding board to help collate the best information possible to help the decision-maker answer a specific question.</description>
+    </item>
+    
+  </channel>
+</rss>

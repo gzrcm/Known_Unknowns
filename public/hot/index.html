@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+  <title>Known Unknowns</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A website built through Hugo and blogdown." />
+  <meta name="author" content="" />
+  <meta name="generator" content="Hugo 0.49" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<link rel="stylesheet" href="/css/dracula.css" rel="stylesheet" id="theme-stylesheet">
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/">Known Unknowns</a>
+            </h1>
+
+      <ul id="social-media">
+             
+      </ul>
+      
+      <p><em>As our circle of knowledge expands, so does the circumference of darkness surrounding it.<br/>-Albert Einstein</em></p>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="mailto:jacob.kaelan@gmail.com">
+                <i class="fa-li fa  fa-lg"></i><span>Email</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="https://github.com/gzrcm">
+                <i class="fa-li fa  fa-lg"></i><span>GitHub</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="https://uk.linkedin.com/in/jacobbaisley">
+                <i class="fa-li fa  fa-lg"></i><span>Linkedin</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/projects/">
+                <i class="fa-li fa  fa-lg"></i><span>Projects</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+  
+
+    <main>
+
+
+
+
+<about>
+
+    <h1>Kent Crime Hotspot App</h1>
+
+    
+
+<h3 id="summary">Summary</h3>
+
+<p>The Kent Crime Hotspot App is a proof of concept, calling publically available data from the Police UK and subjecting it to an automatic raster heat map algorithm that displays potential crime density.</p>
+
+<h3 id="method">Method</h3>
+
+<p>To begin data is called form the police data API, specifying an arbitrary area of North Kent (including parts of Greater London). This data is subject to an anonymization algorithm that disguises the true location of the crime committed.</p>
+
+<p>The raster is created by using the R ‘KernelSmooth’ package. It returns a set of Cartesian coordinates for each point to produce a matrix for density. The kernel method used for this analysis was bivariate normal density.</p>
+
+<p>Due to a delay in data supplied by the API for investigation, safety and administrative reasons, there is a 90-day delay applied to the data to ensure any call to the API will yield a data set.</p>
+
+<h3 id="interaction">Interaction</h3>
+
+<p>The two parameters the user can specify are the categories of crime committed and the bandwidth smoothing used in creating a kernel density estimate used for the raster map.</p>
+
+<iframe scrolling="no" frameborder="no" height=1000px width=1000px src="https://jkbapps.shinyapps.io/apps/"> </iframe>
+
+
+</about>
+
+
+<section class="post-nav">
+    <ul>
+        
+        
+    </ul>
+</section>
+    
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</body>
+
+</html>

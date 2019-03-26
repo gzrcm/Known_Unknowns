@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Known Unknowns</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Known Unknowns</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quantifying Ignorance</title>
+      <link>/2019/03/16/quantifying-ignorance/</link>
+      <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/03/16/quantifying-ignorance/</guid>
+      <description>Ever since I was a child I have had a dream, albeit a naïve one, to know everything. Obviously, I am not the most brilliant person imaginable, but what it has resulted in is an extreme generalist skill set. I have a BA as well as an MSc, I have worked in public and the private sector, I have done very manual jobs and new millennial jobs like quantitative research.</description>
+    </item>
+    
+    <item>
+      <title>Tyranny of the Mean</title>
+      <link>/2019/02/03/tyranny-of-the-mean/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/02/03/tyranny-of-the-mean/</guid>
+      <description>We all remember studying central tendency, right? Mean, Median and Mode. I am willing to bet that your teachers also spent more time on mean because it had some maths to it. So why the other two?
+Look at the diagram below, Full credit to Dr. Philip Lee Miller who created it. Can we say that the “mean” is representative of this population? Well, no.
+  Todd Rose from the Star wrote an excellent piece on the history of this problem using the US fighter pilots example.</description>
+    </item>
+    
+    <item>
+      <title>Leverage</title>
+      <link>/2018/11/09/leverage/</link>
+      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/11/09/leverage/</guid>
+      <description>Douglas Hubbard was famous for saying, “you need less data than you think you do, and you have more data than you think you have.” I generally agree with. Simple models that explain simple issue are always favoured over the more complex black-box models that are all signing and all dancing.
+But what happens when we disregard Hubbard’s adage? This is where leveraging happens. Incorrect data is used in inappropriate ways and extrapolated to fill gaps it should not.</description>
+    </item>
+    
+    <item>
+      <title>The Forest and the Trees</title>
+      <link>/2018/11/02/the-forest-and-the-trees/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/11/02/the-forest-and-the-trees/</guid>
+      <description>I feel like I make a lot of school days’ comparisons, asking readers to harken back to their teenage years when their unbridled dreams stretched to weekend plans and maybe getting a summer job. I don’t like to dwell on the image, but when we are young we cannot conceive of long term plans or consequences. To borrow a term from my high history teacher, “you are here to learn how to be adults.</description>
+    </item>
+    
+    <item>
+      <title>Be Practical!</title>
+      <link>/2018/10/21/be-practical/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/10/21/be-practical/</guid>
+      <description>I thought I would change gears into something more practical this week, delivering a basic analytic product end to end. I will preface this with I hate doing analysis in Excel, but the world’s most prolific software isn’t going anytime soon. To be fair, most people are comfortable with it so that is what we will discuss in this post.
+What I always recommend to people is they treat their analysis as thee distinct parts.</description>
+    </item>
+    
+    <item>
+      <title>What are you Trying to do?</title>
+      <link>/2018/10/18/what-are-you-trying-to-do/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/10/18/what-are-you-trying-to-do/</guid>
+      <description>What are you trying to do? That’s a question I have to ask clients all too often. This is typically necessitated for one of two reasons: the decision-maker assumes I know something I do not that would help clarify the problem, or more likely the requirements have been poorly articulated. Requirements that are critical to actually doing intelligence. Otherwise we all stumble aimlessly in the dark looking for success.
+Analysts are a sounding board to help collate the best information possible to help the decision-maker answer a specific question.</description>
+    </item>
+    
+    <item>
+      <title>Brain Failures</title>
+      <link>/2018/10/09/brain-failures/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/10/09/brain-failures/</guid>
+      <description>There is a great clip online of Neil deGrasse Tyson describing optical illusions as “Brain Failures.” Like most of Tyson’s appearances its played for laughs while secretly teaching you about science, but analysts know this true. So true in fact that the great Richard Heuer wrote a manual for the CIA on how to over come cognitive bias called the Psychology of Intelligence Analysis.
+Heuer explores “brain failures” by dichotomizing the causes and exploring the effects.</description>
+    </item>
+    
+    <item>
+      <title>When you do things right...</title>
+      <link>/2018/08/08/when-you-do-things-right/</link>
+      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/08/08/when-you-do-things-right/</guid>
+      <description>One of the best visualisations of intelligence management I was exposed to during my MSc at Mercyhurst University was the concept of intelligence as three distinct powers; process, product and culture. When arranged in a diagram, as below, form the foundation for proper intelligence (yes, it looks like a tri-force from Legend of Zelda and that is an apt description).
+
+Instead of focusing on the product exclusively, the intelligence tri-force image equally balances the process of making decisions, the product design itself and finally, how we as analysts influence organisational culture for the better.</description>
+    </item>
+    
+    <item>
+      <title>The Analyst Toothbrush</title>
+      <link>/2018/08/02/the-analyst-toothbrush/</link>
+      <pubDate>Thu, 02 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/08/02/the-analyst-toothbrush/</guid>
+      <description>Anyone that has ever worked in coding or analysis dreads picking up the work of a colleague without being included from the initial scope. Why? Because our brains are like unique software, each with their own processes, hardware, verifications, etc. Stepping into someone else’s analysis is hard and can be incompatible with our cognitive machinery. I liken it to using someone else’s tooth brush. Yeah, tooth brushes are all the same and perform the same function, but your tooth brush is yours.</description>
+    </item>
+    
+    <item>
+      <title>Let’s Begin!</title>
+      <link>/2018/08/01/let-s-begin/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/08/01/let-s-begin/</guid>
+      <description>As Albert Einstein said, “As our circle of knowledge expands, so does the circumference of darkness surrounding it.” Ironically the more we learn the less we realise we know. It is that simple and humbling thought that attracted me, in part, to intelligence analysis. The idea that our hubris is a demonstration of ignorance, but acknowledgment of ignorance has a certain awe associated with it. What I imagine is close a religious experience.</description>
+    </item>
+    
+  </channel>
+</rss>
