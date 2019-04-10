@@ -23,7 +23,9 @@ The traditional intelligence cycle emphasis a circular process of requirements t
 
 There is to much to cover on each piece in this post so I will do a separate bit on each piece of the "tri-force" starting in the deep-end; Culture.
 
-Working in risk intelligence function our team was asked how we measure our impact. I wanted to respond with the Futurama quote by the God Entity whom Bender encounters in deep space; "When you do things right, people won't be sure you've done anything at all." 
+Working in risk intelligence function our team was asked how we measure our impact. I wanted to respond with the Futurama quote by the God Entity whom Bender encounters in deep space; "When you do things right, people won't be sure you've done anything at all."
+
+<center><img src="/img/right.png" alt="Drawing" style="width: 400px;"/></center>
 
 Intelligence is a support function akin to an advisory role. I feel if your organisation asks you to quantify intelligence impact, you likely have a culture problem. The response back could be, "what have you done with my analysis?" But as analysts we are a sounding board, a patient, objective instrument of our decision-makers. So we don't lash out, we educate.
 
