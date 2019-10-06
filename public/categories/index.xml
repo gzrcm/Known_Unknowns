@@ -6,69 +6,42 @@
     <description>Recent content in Categories on Known Unknowns</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>AI</title>
+      <link>/categories/ai/</link>
+      <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Analysis</title>
       <link>/categories/analysis/</link>
-      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/analysis/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Brexit</title>
-      <link>/categories/brexit/</link>
-      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Data Science</title>
+      <link>/categories/data-science/</link>
+      <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/brexit/</guid>
+      <guid>/categories/data-science/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Business_planning</title>
-      <link>/categories/business_planning/</link>
-      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/business_planning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cognative Bias</title>
-      <link>/categories/cognative-bias/</link>
-      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/cognative-bias/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Culture</title>
-      <link>/categories/culture/</link>
-      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/culture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data</title>
-      <link>/categories/data/</link>
-      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Decision Making</title>
+      <title>decision-making</title>
       <link>/categories/decision-making/</link>
-      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/decision-making/</guid>
       <description></description>
@@ -77,7 +50,7 @@
     <item>
       <title>Intelligence Analysis</title>
       <link>/categories/intelligence-analysis/</link>
-      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/intelligence-analysis/</guid>
       <description></description>
@@ -93,11 +66,29 @@
     </item>
     
     <item>
-      <title>Science</title>
-      <link>/categories/science/</link>
-      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      <title>Brexit</title>
+      <link>/categories/brexit/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/science/</guid>
+      <guid>/categories/brexit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>/categories/data/</link>
+      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Business_Planning</title>
+      <link>/categories/business_planning/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/business_planning/</guid>
       <description></description>
     </item>
     
@@ -107,6 +98,33 @@
       <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/strategy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Culture</title>
+      <link>/categories/culture/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/culture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cognative Bias</title>
+      <link>/categories/cognative-bias/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/cognative-bias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Science</title>
+      <link>/categories/science/</link>
+      <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/science/</guid>
       <description></description>
     </item>
     
