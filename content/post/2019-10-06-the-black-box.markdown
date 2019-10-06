@@ -1,0 +1,109 @@
+---
+title: The Black Box
+author: JB
+date: '2019-10-06'
+slug: the-black-box
+categories:
+  - Analysis
+  - Intelligence Analysis
+  - decision-making
+  - AI
+  - Data Science
+tags: []
+---
+
+<center><a href="http://artificialintelligencemania.com/2019/01/10/the-black-box-problem/"><img src="/img/BB1.png" alt="Drawing" style="width: 600px;"/></a></center>
+
+The concept of a black box was developed in the 1940’s as a device that recorded the various readings of aircraft instruments. The purpose was to be accessible in the event of a crash so that investigators could understand the conditions leading to the tragedy in the hopes of learning how to avoid it in the future. Today we often see it in the context of decision-making, usually associated with shadowy “Artificial Intelligence” and “Algorithmic Learning,” all that techy stuff that journalists and politicians don’t get some times. The contemporary black box is a process or method that conceals itself while processing inputs into outputs. So while it does provide insight we cannot see how it arrives at that conclusion. Funny how times change from a device for insight to a process of obfuscation.
+
+
+## Obfuscation
+
+Let’s explore the concept of Black Box thinking, first by understanding obfuscation. When we refer to obfuscation we are referring to the layers of understanding that make something difficult to understand. This typically separates a novice user from an expert. While not a modern example of black box problem please consider the classic intelligence example as a primer;
+
+>The car won’t start.
+
+Most of us have unfortunately encountered this issue. You are either about to leave home or have left home and turn the key, nothing. What do you do? Some of use might know some basic troubleshooting options. Out of gas? Battery needs a boost? Punctured tire? Some of us, despite our knowledge and skill might still end up calling a tow truck and going to a mechanic. Then on the far side of the spectrum are car designers. They might have all the theoretical understanding in the world on what a car needs to function but none of the practical tools to execute it. So while we interact with a car as device, we don’t really understand how it works to the degree that we have mastery over it and we are beholden to others for its continued use.
+
+So if we imagine our knowledge of car trouble shooting as a continuum it might look like this.
+
+<center><img src="/img/BB2.png" alt="Drawing" style="width: 600px;"/></center>
+
+Note that we are not making any comment about which is better, theoretical or practical knowledge, rather, the emphasis is on the move from novice to expert. It just so happens that our solution requires a mechanic.
+
+In our “car won’t start” example, most users will offset their knowledge use of running a vehicle to others. So when your mechanic says “Yeah, it was the carburetor,” You say “Great! How much do I owe you!” and the transaction is complete until the next failure. This example works quite well for our individual experience, most of us have driven cars, but mechanics are a very specific practise and a hard practical trade. When we move this problem towards more fluffy, or obtuse subjects the answer becomes more difficult. 
+
+## Soft Focus
+So let’s approach obfuscation in the black box problem from two perspectives. The first will be that of an intelligence issue, let's say Middle Eastern foregin policy. Secondly we will take about data science in a customer service context. In each example we will classify the analyst and data scientists as the “mechanic” and the decision-maker as a “user.”
+
+We have been over the purpose of intelligence several times so I will skip the process, but ultimately an intelligence analysis will produce an assessment complete with a set of forecasts or recommendations based on distilled knowledge. So I am an analyst working for USCENTCOM which covers the middle east. I produce an assessment on Iranian activity in the Bay of Hormuz in light of the US withdrawal from the nuclear deal. I pass that assessment to my superior who is also an expert in middel-eastern affairs more generally. Now my decision-maker is an invested and knowledgable counterpart who can challenge and digest my information on an equal footing. And, because we are plotting social-political forecasts there is a certain amount of subjectivity, expertise and training that will be wrapped up in both the analysts and the superiors understanding and approach to the assessment. This is not a black box problem, two colleagues are exploring models for geopolitical interpretation based on shared knowledge and expertise. The decision-making, while it may be limited in scope, is still interpretable and questionable.
+
+Let's more now to a data science context. Again this is for demonstration, it might not be your experience. A company producing widgets is losing 10% profit per quarter to their main competitor. They know that data scientist style people can help understand insight into customers. I am hired as a data scientist, I go through their data, revolutionize their customer targeting system by using principal components analysis to help push and withdraw offers over their competition to the right customer at the right time. I then sit down with the decision-maker and say “Yeah, so we used a principal components analysis to help create customer segments and a schedule of when your product is most successful so you can push at the right times.” The decision-maker says “Great! I know everything about making widgets and not this, how much do I owe you?” This is a black box problem because the ultimate owner of my work is not able to evaluate its efficacy on equal footing.
+
+I am being slightly tongue in cheek, but often the difference between these two disciplines is the analyst/ data scientist communication of information the decision-maker (or user in our experience) can provide feedback on and create a dialogue about what is right in context. To quote Captain Gabriel Lorca from *Star Trek discovery*, “Context is for kings.” What is different in the mechanic example from above is that the mechanic is typically a one off and not being replied upon for a continuous source of knowledge and assessment. We typically do not rely on them for anything other than what they do when we need it. Analysts and Data Scientists we rely on everyday for problem solving.
+
+## The New Spiritualist
+
+Spiritualism is a religious movement that developed in 1840’s New York. It was focused on the impact that spirits from the afterlife have in our physical world. It also coincided with the rise of fraudsters and swindlers, some purposefully malicious, others unintentionally, that persists until today. Psychics, clairvoyants, mediums all raking in money while taking advantage of those seeking help and clarity in trying times claiming proficiency in a skill that no one could vet the efficacy of. Their claims couldn’t be refuted because it is not testable, but likewise their ability to provide vague but relevant forecasts with sufficiently contextual accuracy lended them undo credibility. Black Box systems and their pushers are in danger of being the new spiritualist fraudster using one sided, unchallenged methods that they may not understand themselves, or worst, are malicious actors presenting themselves as objective truth. In these discussions the commodity we are trading is not knowledge, it’s faith, just like those people seeking help and clarity in the past.
+
+Most data scientists are decent intelligent people driven by an innovative spirit and the practical skills necessary to take on complex tasks and produce real world results. But there is often a  price to be paid, intentionally or unintentionally. 
+
++ Complex methods are difficult to explain and understand, even for the developer. [(see Nick Ismail’s Opinion piece on Data Science Cowboys](https://www.information-age.com/data-science-cowboys-ai-analytics-challenge-123484974/)
+
++ Unsupervised machine learning can change its parameters so fast the initial scoring and purpose of an algorithm quickly descends into chaos. [(see James Vincent’s piece of Microsoft racist AI bot)](https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist) 
+
++ Bias can run rampant and discriminate against people or color, women and minorities. [(see Joy Buolamwini review of radical bias in AI)](https://time.com/5520558/artificial-intelligence-racial-gender-bias/)
+
+## Dealing with Complexity
+
+<center><img src="/img/BB3.png" alt="Drawing" style="width: 600px;"/></center>
+
+Coming back to the issue of the analyst and data scientist what often happens is the obfuscation of the decision-maker for strategic reasons. Very few organisations are geared towards data driven decision making and as a result a data scientist is one small part of a larger organisation. That gets reflected in the mental bandwidth of the decision-makers above them. We wouldn’t expect a CEO to understand K-means clustering maths, they have a lot on their plate with many other issues. They may also have a deep understanding of the subject matter, culture and history of their profession, but not of statistics, technology and machine learning. Therefore the collaboration is difficult, often one sided. A data scientist is taking in inputs and interpreting outputs. The quality control comes down to the political test of how will the results be taken/ communicated to the audience as opposed to if the method was right or wrong.
+
+In the analyst example we would expect the leaders of USCENTCOM to know intelligence methods and the subject matter so the quality control is coupled with the dissemination process. Because this doesn’t happen in the data science example as quality control comes in the form of collaboration between other data scientists which keeps the knowledge, skills, and the debates between themselves. It also misses the key ingredient, context. So the ability to peer review a method within an existing organizational structure that doesn’t have a robust data insights team is exposed to the issue of black box learning described above, and that is before we even get to personal bias!
+
+## Trust
+
+The critics and sensational headlines will say that it is a dystopian future akin to the film Idiocracy  in which our entire lives are dictated by biased and apathetic robots who’s creators are maladjusted programmers with no social skills and therein human sow the seeds of its own destruction! I told you it was dramatic. Conversely, flat earthers for example would have you throw out 2,500 years of cumulative science because they cannot understand it themselves claiming grand conspiracy and waste of government resources on NASA. (Seriously, Aristotle was able to prove the earth was round by watching the shadows of sticks in the ground and ships on the horizon, get it together people!)
+
+And yes, you don’t believe everything you see; but there are simple experiments that prove the earth is round, there is an evident correlation between victimisation and crime, Darwin’s theory of natural selection has been proven in many independent contexts. So finding the balance between obfuscation and faith is difficult if not impossible. As a programmer that relies on R packages for my job I have faith in my fellow programmers for their documentation and diligence in ensuring the function work, but I can interrogate them and understand the underlying tools. Therein lies the difference between blind trust and application of the scientific method necessary to combat the perils of obfuscation. Consider it provable faith.
+
+## Two Way Street
+
+I was once given great investment advice in that if the seller waves their hand and says “It's complicated but works”, walk away. If someone cannot explain it to you, even on a theoretical level, do not accept it at face value and ask for more detail. Don’t assume that if it sounds complicated, it must be right and likewise do not dismiss because it is hard to understand. The two way street between the decision-maker and the analyst/ data scientist is to learn, explore, understand and question together. What we need to combat is the one sided ‘faith’ problem with a more equal distribution of responsibility that will hoppufly rein in cowboy data science and likewise better the decision-making quality of managers.
+
+So I will leave you, dear reader, with some tips and hints to help make you a better challenger of these tools and ensure we get the best out of them;
+
+1. Look for points of obfuscation when making decisions in your work or personal life;
+  * Ask yourself how you know what you know and where it comes from?
+  * Is the data forecasted or predicted? If so, how?
+  * How much do you trust, or even perceive, the data given to you at work?
+  * How critical are the decisions made on the basis of that data?
+  * Has a bad decision ever been made? If so, why?
+
+2. If someone says algorithm, machine learning, or AI;
+  * Make them explain their method
+  * If the method is too complex to understand, it is too complex for you  to rely on for insight and may need rethinking
+  * You don’t need to get it straight away, but you should be able to follow their logic. Intelligence is for the user not for the method or its designer
+  * How uncertain is the method? It is right 90% of the time, 80%, etc?
+  * How will we know when it gets something wrong and then correct it?
+  * What assumptions does the method make about the data that limit its opportunity for interpretation?
+  * What alternatives are there and why weren't they used?
+
+3. Keep it simple;
+  * There are no silver bullets in data science
+  * Occam's razor says the simplest explanation is likely true so opt for simple methods or several pieces of information rather than one frankenstein black box process.
+  * Build complexity as you gain confidence in the method and see its limits
+  * Don’t be precious, making the right decision is the goal, not protecting your solution. Be prepared to scrap your method and start again if it isn’t working.
+  * In the words of my friend, Pascal Frion, become ‘data lean’ and only put into a method what is necessary to answer a question.
+
+4. Continuously learn!
+  * Following on from above, keep asking questions about your job and getting under the hood of the decision-making process.
+  * If you ask for an explanation of the method get details and study it.
+  * Ask the analyst/ data scientist to teach you how to do what they do.
+
+## Conclusion
+
+It is easy to blame the analyst or data scientist if things go wrong or are misunderstood, it is important to remember that the street goes both ways. Your role as a decision-maker is to reduce uncertainty in action. Black box methods increase that uncertainty, they do not detract from it. While having faith is a virtue, make sure that faith is tempered by some solid evidence or at least questioning. The onus is on analysts and data scientists to provide robust explanation and justification for how they arrived at the conclusion. Let’s start turning our relationship with these new methods into opportunities for insight and learning rather than opportunities to drive ourselves father into ignorance and complacency. 
+
+The image at the start of the post comes from Artificial Intelligencemania. Check it out [here](http://artificialintelligencemania.com/2019/01/10/the-black-box-problem/)
