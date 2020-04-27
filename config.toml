@@ -17,7 +17,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "/projects/"
 [[menu.main]]
     name = "Email"
-    url = "mailto:jacob.kaelan@gmail.com"
+    url = "mailto:jb@knownunknowns.co.uk"
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/gzrcm"
