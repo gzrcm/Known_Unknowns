@@ -36,6 +36,9 @@
       {{ with .Site.Params.tagline }}
       <p><em>{{ . | markdownify }}</em></p>
       {{ end }}
+      {{ template "_internal/google_analytics.html" . }}
+      {{ template "_internal/google_analytics_async.html" . }}
+      
     </header>
 
     {{ partial "nav" . }}
