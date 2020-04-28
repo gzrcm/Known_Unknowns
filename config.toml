@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Known Unknowns"
 theme = "hugo-kiera-master"
-googleAnalytics = ""
+googleAnalytics = "G-BGC0DH0PJ0"
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
