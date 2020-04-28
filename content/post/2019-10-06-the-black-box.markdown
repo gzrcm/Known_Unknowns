@@ -12,7 +12,11 @@ categories:
 tags: []
 ---
 
+<<<<<<< HEAD
 <center><a href="http://artificialintelligencemania.com/2019/01/10/the-black-box-problem/"><img src="/img/BB1.png" alt="Drawing" style="width: 600px;"/></a></center>
+=======
+<center><img src="/img/BB1.png" alt="Drawing" style="width: 600px;"/></center>
+>>>>>>> 045d971e6dedb208e6443e957c436094f7f25c42
 
 The concept of a black box was developed in the 1940’s as a device that recorded the various readings of aircraft instruments. The purpose was to be accessible in the event of a crash so that investigators could understand the conditions leading to the tragedy in the hopes of learning how to avoid it in the future. Today we often see it in the context of decision-making, usually associated with shadowy “Artificial Intelligence” and “Algorithmic Learning,” all that techy stuff that journalists and politicians don’t get some times. The contemporary black box is a process or method that conceals itself while processing inputs into outputs. So while it does provide insight we cannot see how it arrives at that conclusion. Funny how times change from a device for insight to a process of obfuscation.
 
@@ -105,5 +109,8 @@ So I will leave you, dear reader, with some tips and hints to help make you a be
 ## Conclusion
 
 It is easy to blame the analyst or data scientist if things go wrong or are misunderstood, it is important to remember that the street goes both ways. Your role as a decision-maker is to reduce uncertainty in action. Black box methods increase that uncertainty, they do not detract from it. While having faith is a virtue, make sure that faith is tempered by some solid evidence or at least questioning. The onus is on analysts and data scientists to provide robust explanation and justification for how they arrived at the conclusion. Let’s start turning our relationship with these new methods into opportunities for insight and learning rather than opportunities to drive ourselves father into ignorance and complacency. 
+<<<<<<< HEAD
 
 The image at the start of the post comes from Artificial Intelligencemania. Check it out [here](http://artificialintelligencemania.com/2019/01/10/the-black-box-problem/)
+=======
+>>>>>>> 045d971e6dedb208e6443e957c436094f7f25c42
