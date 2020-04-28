@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Known Unknowns</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TL;DR</title>
+      <link>/2020/04/28/tl-dr/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/04/28/tl-dr/</guid>
+      <description>Hello folks, we are going to start doing this differently. I figured if I don’t like lengthy diatribe articles, neither do you. So we will be splitting the blog into a Too Long; Didn’t Read (TL;DR) section and Too Short; Want More! (TS;WM) section. I figure that serves a twofold purpose: I get better at writing intelligence BLUF’s (Bottom Line up Front), but I have rant and rave like a crazy person in the rest without burdening you.</description>
+    </item>
     
     <item>
       <title>The Black Box</title>
@@ -17,7 +26,9 @@
       <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>/2019/10/06/the-black-box/</guid>
-      <description>The concept of a black box was developed in the 1940’s as a device that recorded the various readings of aircraft instruments. The purpose was to be accessible in the event of a crash so that investigators could understand the conditions leading to the tragedy in the hopes of learning how to avoid it in the future. Today we often see it in the context of decision-making, usually associated with shadowy “Artificial Intelligence” and “Algorithmic Learning,” all that techy stuff that journalists and politicians don’t get some times.</description>
+      <description>&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+  &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; 045d971e6dedb208e6443e957c436094f7f25c42
+The concept of a black box was developed in the 1940’s as a device that recorded the various readings of aircraft instruments. The purpose was to be accessible in the event of a crash so that investigators could understand the conditions leading to the tragedy in the hopes of learning how to avoid it in the future. Today we often see it in the context of decision-making, usually associated with shadowy “Artificial Intelligence” and “Algorithmic Learning,” all that techy stuff that journalists and politicians don’t get some times.</description>
     </item>
     
     <item>
