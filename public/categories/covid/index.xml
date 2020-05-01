@@ -6,10 +6,21 @@
     <description>Recent content in COVID on Known Unknowns</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/covid/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R Test</title>
+      <link>/2020/05/01/r-test/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/01/r-test/</guid>
+      <description>TL;DR The UK government has released a series of communications outlining the five tests they will use to track and inform COVID-19 lockdown measures. The government&amp;rsquo;s video regarding an infection rate, or R value, is a great example of data driven storytelling.
+TS:WM This one will be short
+  This will be a short one. See the video above. I have been following the COVID-19 crisis with great interest, not only from a geo-political perspective but because of the challenges it presents in terms of data while we search for facts and truth about the virus.</description>
+    </item>
     
     <item>
       <title>Fudging Numbers</title>
