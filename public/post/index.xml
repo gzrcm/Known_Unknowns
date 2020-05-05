@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Known Unknowns</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Silver Linings</title>
+      <link>/2020/05/05/silver-linings/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/05/silver-linings/</guid>
+      <description>TL;DRThe COVID pandemic has created an unprecedented opportunity to explore new ways of working. Where large scale transformation programmes have traditionally failed, a forced change in work that ignores existing culture, is irreverent about budget planning, bypasses leadership personalities and shares no personal biases about what it means to be ‘productivity’ gives us a test bed for new ways of working. We should seize this opportunity as best we can.</description>
+    </item>
     
     <item>
       <title>R</title>
