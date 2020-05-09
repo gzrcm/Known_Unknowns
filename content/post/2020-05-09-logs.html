@@ -1,0 +1,41 @@
+---
+title: Logs
+author: JB
+date: '2020-05-09'
+slug: logs
+categories: []
+tags: []
+---
+
+
+
+<div id="tldr" class="section level1">
+<h1>TL;DR</h1>
+<p>One of the educational benefits of COVID-19 is a great deal of coverage of statistical reporting, in particular an excellent, but not well understood technique known as logarithmic scaling. Logarithmic scaling allows readers to understand the effects of a given trend or quantity without the skew of large numbers. This is one of the ways we often hear health care professionals refer to when looking at lockdowns, how they work and if they can lift them. So they are very important.</p>
+</div>
+<div id="tswm" class="section level1">
+<h1>TS;WM</h1>
+<p>I have read some news sources report experts calling this period <a href="https://www.washingtonpost.com/world/asia_pacific/new-zealand-isnt-just-flattening-the-curve-its-squashing-it/2020/04/07/6cab3a4a-7822-11ea-a311-adb1344719a9_story.html">“A triumph of science”</a>. And while generally I am an optimist, I think the jury might still be out on that when you have powerful people peddling bleach as a treatment. However, we cannot deny that we have been bombarded with news and facts about statistics, measurements, <a href="https://knownunknowns.co.uk/2020/05/01/r-test/">R values</a>, you name it.</p>
+<p>To understand why logs are handy we first need to understand exponential growth. A simple example is doubling. Imagine you have a sequence of numbers and every time you add one it doubles; 1 becomes 2, 2 becomes 4, etc. If we plot this sequence we might get something that looks like this…</p>
+<p><img src="/post/2020-05-09-logs_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><em>Note two important things about the graph both the X axis and the Y axis increase by a rate of 1, so for every x=1, y=1, etc. </em></p>
+<p>Assuming this pattern continues I will eventually have a graph that ends in a vertical line seeming going on forever. And that is not very helpful.</p>
+<p>So why does this matter? Because things, such as disease, don’t move in a linear fashion. Remember our post about R Values? One day one; 1 person can infect 2 people; on day two,then 2 people will infect 4, and so on. So the number is exponential. It’s all coming together!</p>
+<p>So what about the vertical line in our graph? Well if the <em>X</em> and <em>Y</em> scale are 1 to 1 it doesn’t tell us anything about the ‘rate of change’ other than it is big. The World Economic Forum actually has a <a href="https://www.weforum.org/agenda/2020/04/covid-19-spread-logarithmic-graph/">great article</a> on this that I recommend. They explain it as;</p>
+<blockquote>
+<p>“On a logarithmic scale, numbers on the Y-axis don’t move up in equal increments but instead each interval increases by a set factor – it’s often 10 but could be a factor of 3 or 350 or 3,500, anything at all. It all depends on what is deemed to be the most effective way of interpreting the data in question. The Richter scale is logarithmic – an earthquake that measures 6 is 10- times more destructive than one that measures 5.”</p>
+</blockquote>
+<p>Right! So if I wanna see when an exponential growth curve will level off, I use a logarithmic scale. Using our same data, in log 10, it would look like this;</p>
+<p><img src="/post/2020-05-09-logs_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Cool! Note that now my scale is all increments of 10. That’s because I selected a ‘base 10’ system meaning that each <em>Y</em> value increases to the power of 10. So if <em>X</em>=1, <em>Y</em>=1, but now, <em>X</em>=2, <em>Y</em>=10; <em>X</em>=3, <em>Y</em>=100 and so on. So my rate of change actually slows significantly as I approach the limit in my graph. That doesn’t say my growth has stopped, but does show that I am no longer getting the same bang for <em>Y</em> everytime <em>X</em> increases.</p>
+<p>Eventually, I might hit a point where actually <em>Y</em> starts to decrease, as shown in this image from a fellow <a href="https://www.r-bloggers.com/covid-19-explore-your-visualizer-degrees-of-freedom/">R blogger, Joachim Gassen.</a></p>
+<div class="figure">
+<img src="https://i2.wp.com/joachim-gassen.github.io/post/2020-04-09-covid19-explore-your-visualizer-dof_files/figure-html/good-3-1.png?w=450&amp;ssl=1" alt="Joachim Gassen, Github, 2020" />
+<p class="caption"><em>Joachim Gassen, Github, 2020</em></p>
+</div>
+<p>So why is this important for investigating COVID-19? Well Bobby Seagull has the answer;</p>
+<blockquote>
+<p>“It flattens out the rate of growth so it becomes easier to see… On a logarithmic graph of COVID-19 infections, even though the overall numbers are still increasing, you can see the point at which the rate of growth starts to level off when that exponential growth has stopped. At that point, the logarithmic scale makes it possible to see when public health measures are starting to have the desired effect.”</p>
+</blockquote>
+<p>Easy! But we don’t just have to use sickness, this could be applied to; finance, populations, traffic, basically anything that doesn’t have a linear relationship, which is most things. A bit more a technical one today folks, but I hope it was helpful as we see the light at the end of the tunnel of this period. There are many people talking about this at the moment so if you learned it here first that, yay for both of us! This is a great time to learn and study maths, so let’s take advantage!</p>
+</div>

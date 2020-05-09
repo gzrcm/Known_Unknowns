@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Known Unknowns</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Logs</title>
+      <link>/2020/05/09/logs/</link>
+      <pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/09/logs/</guid>
+      <description>TL;DROne of the educational benefits of COVID-19 is a great deal of coverage of statistical reporting, in particular an excellent, but not well understood technique known as logarithmic scaling. Logarithmic scaling allows readers to understand the effects of a given trend or quantity without the skew of large numbers. This is one of the ways we often hear health care professionals refer to when looking at lockdowns, how they work and if they can lift them.</description>
+    </item>
     
     <item>
       <title>Silver Linings</title>

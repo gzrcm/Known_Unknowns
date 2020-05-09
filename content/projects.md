@@ -8,5 +8,4 @@ layout: about_page
 
 [**Semantic Analysis for Strategy Setting**](/Semantic/)
 
-
 More Coming Soon!

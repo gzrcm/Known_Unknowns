@@ -85,112 +85,49 @@
 
 
 
-<section id="list">
+<about>
+
+    <h1>Kent Crime Hotspot App</h1>
 
     
 
-    
-        <h2>Posts</h2>
-    
+<h3 id="summary">Summary</h3>
 
-    
+<p>The Kent Crime Hotspot App is a proof of concept, calling publically available data from the Police UK and subjecting it to an automatic raster heat map algorithm that displays potential crime density.</p>
 
-    
+<h3 id="method">Method</h3>
 
-    <h3>2018</h3>
+<p>To begin data is called form the police data API, specifying an arbitrary area of North Kent (including parts of Greater London). This data is subject to an anonymization algorithm that disguises the true location of the crime committed.</p>
+
+<p>The raster is created by using the R ‘KernelSmooth’ package. It returns a set of Cartesian coordinates for each point to produce a matrix for density. The kernel method used for this analysis was bivariate normal density.</p>
+
+<p>Due to a delay in data supplied by the API for investigation, safety and administrative reasons, there is a 90-day delay applied to the data to ensure any call to the API will yield a data set.</p>
+
+<h3 id="interaction">Interaction</h3>
+
+<p>The two parameters the user can specify are the categories of crime committed and the bandwidth smoothing used in creating a kernel density estimate used for the raster map.</p>
+
+<iframe scrolling="no" frameborder="no" height=1000px width=1000px src="https://jkbapps.shinyapps.io/apps/"> </iframe>
+
+
+</about>
+
+
+<section class="post-nav">
     <ul>
         
         <li>
-            <a href="/2018/11/09/leverage/">Leverage</a>
-            <time class="date-meta">Nov 9</time>
+            <a href="/projects/"><i class="fa fa-chevron-circle-left"></i> Projects</a>
         </li>
         
-        <li>
-            <a href="/2018/11/02/the-forest-and-the-trees/">The Forest and the Trees</a>
-            <time class="date-meta">Nov 2</time>
-        </li>
         
         <li>
-            <a href="/2018/10/21/be-practical/">Be Practical!</a>
-            <time class="date-meta">Oct 21</time>
-        </li>
-        
-        <li>
-            <a href="/2018/10/18/what-are-you-trying-to-do/">What are you Trying to do?</a>
-            <time class="date-meta">Oct 18</time>
-        </li>
-        
-        <li>
-            <a href="/2018/10/09/brain-failures/">Brain Failures</a>
-            <time class="date-meta">Oct 9</time>
-        </li>
-        
-        <li>
-            <a href="/2018/08/08/when-you-do-things-right/">When you do things right&hellip;</a>
-            <time class="date-meta">Aug 8</time>
-        </li>
-        
-        <li>
-            <a href="/2018/08/02/the-analyst-toothbrush/">The Analyst Toothbrush</a>
-            <time class="date-meta">Aug 2</time>
-        </li>
-        
-        <li>
-            <a href="/2018/08/01/let-s-begin/">Let’s Begin!</a>
-            <time class="date-meta">Aug 1</time>
+            <a href="/hot/">Kent Crime Hotspot App <i class="fa fa-chevron-circle-right"></i> </a>
         </li>
         
     </ul>
-    
-    
-
 </section>
-
-
-
-<ul class="pagination">
     
-    <li class="page-item">
-        <a href="/post/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-    <a href="/post/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/post/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="/post/page/2/">2</a></li>
-    
-    
-    <li class="page-item disabled">
-    <a  class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="/post/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
-</ul>
 
 
 
