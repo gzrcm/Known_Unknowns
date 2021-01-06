@@ -31,7 +31,7 @@ Imagine if that is true, then the click-bait industry should die, shouldn't it? 
 
 Linander found 54% (414) of articles were polar yes/no questions. But that wasn’t enough, the question still is if 54% of preposition articles will have a “no” answer. Well, no, if fact, they won’t. Only 17% were no, 20% yes and 16% maybe. So there you go, a small one off test that provides some evidence that Betteridge’s law is hardly a universal constant.
 
-<img src="http://calmerthanyouare.org/img/betteridge_answer_pie.png">
+<img src="https://calmerthanyouare.org/img/betteridge_answer_pie.png">
 <font size="2">*Mats Linaders, 2015*</font>
 
 So where does that leave us. We still have click-bait, our minds are still making bad decisions when they fall into the trap and I have no tool for evaluating headlines. Well what about the analysis of [Steve Rayson](https://buzzsumo.com/blog/most-shared-headlines-study/) in a Buzzsum article form 2017. Rayson looked at 100 million headlines for patterns of engagement. What he found was facining. 
