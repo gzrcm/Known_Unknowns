@@ -8,4 +8,6 @@ layout: about_page
 
 [**Semantic Analysis for Strategy Setting**](/Semantic/)
 
+[**Economic Recovery Dashboard**](/Recovery/)
+
 More Coming Soon!

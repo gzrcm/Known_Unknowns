@@ -1,0 +1,9 @@
+---
+title: "Semantic Analysis for Strategy Setting"
+date: '2016-05-05T21:48:51-07:00'
+layout: about_page
+---
+
+## Recovery Dashboard
+
+<iframe width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=d19b50b3-bb38-4808-9160-9c90e79fb989&autoAuth=true&ctid=20006220-1c6a-4bd2-9453-f868cc644b3f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVrLXNvdXRoLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
