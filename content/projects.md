@@ -4,10 +4,10 @@ date: "2016-05-05T21:48:51-07:00"
 layout: about_page
 ---
 
-[**Kent Crime Hotspot App**](/Hot/)
+[**Kent Crime Hotspot App**](/hot/)
 
-[**Semantic Analysis for Strategy Setting**](/Semantic/)
+[**Semantic Analysis for Strategy Setting**](/semantic/)
 
-[**Economic Recovery Dashboard**](/Recovery/)
+[**Economic Recovery Dashboard**](/recovery/)
 
 More Coming Soon!
