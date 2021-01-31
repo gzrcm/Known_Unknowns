@@ -4,8 +4,9 @@ date: '2016-05-05T21:48:51-07:00'
 layout: about_page
 ---
 
-## Background
+The following is a part of an ongoing project with [Bristol City Council Economic Development Team](https://www.bristol.gov.uk/business-support-advice/economic-information-and-analysis) regarding Economic Development and recovery in light of COVID and potentially Brexit. Bristol are a great team to work for and are very forward facing and happy to embrace new tools and ways of working as the UK responds to these unprecedented times.
 
-A draft dashboard for using Power BI and highly automated datasets to provide context for economic recovery.
+The goal is to create a highly automated data-led bulletin that only needs to be supplemented with commentary as and when it is relevant for update. Slowly snipping away at the industry of static reporting one bite at the time.
 
-<iframe width="875" height="1140" src="https://app.powerbi.com/reportEmbed?reportId=d19b50b3-bb38-4808-9160-9c90e79fb989&autoAuth=true&ctid=20006220-1c6a-4bd2-9453-f868cc644b3f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVrLXNvdXRoLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D&filterPaneEnabled=false" frameborder="0" allowFullScreen="true"></iframe>
+
+<iframe width="875" height="1140" src="https://app.powerbi.com/view?r=eyJrIjoiOGQ5MzUzYTAtNmJlMi00NWE0LTk4NzUtZTNkYTFkYTgxYmJiIiwidCI6IjIwMDA2MjIwLTFjNmEtNGJkMi05NDUzLWY4NjhjYzY0NGIzZiJ9&filterPaneEnabled=false" frameborder="0" allowFullScreen="true"></iframe>
