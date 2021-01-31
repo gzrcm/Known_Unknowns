@@ -8,6 +8,6 @@ layout: about_page
 
 [**Semantic Analysis for Strategy Setting**](/semantic/)
 
-[**Economic Recovery Dashboard**](/recovery/)
+[**Bristol Economic Recovery Dashboard**](/recovery/)
 
 More Coming Soon!
